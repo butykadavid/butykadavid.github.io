@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+    border-style: solid;
+    border-color: crimson;
+    border-width: 10px;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: lawngreen
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.txtArea{
+    color: crimson;
+}
+
+.gomb{
+    background-color: lawngreen;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: crimson;
+}
