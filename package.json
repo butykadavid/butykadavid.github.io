@@ -1,0 +1,29 @@
+{
+  "name": "dawson0810.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawson0810/dawson0810.github.io.git"
+  },
+  "keywords": [
+    "personal",
+    "website"
+  ],
+  "author": "Butyka Dávid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dawson0810/dawson0810.github.io/issues"
+  },
+  "homepage": "https://github.com/dawson0810/dawson0810.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.2",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.13"
+  }
+}
