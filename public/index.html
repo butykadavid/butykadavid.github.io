@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFirstPage</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="home" id="Home">
+        <div class="header">
+            <nav class="navbar navbar-expand-sm">
+                <div class="navbar-brand">
+                    <a href="https://www.instagram.com/b_dawe10/" title="Social Media: Instagram"><h1>D S G N</h1></a>
+                </div>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Feedback">Feedback</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="homeContent">
+            <h2>Websites for everyone!</h2>
+            <p>Need a webpage for your company?<br>
+                Our <a href="#Services"><i>services</i></a> might help you out!
+            </p>
+        </div>
+    </div>
+    
+    <div class="about" id="About">
+        <div class="headline">
+            <h1>A B O U T</h1>
+        </div>
+        <div class="aboutContent">
+            <h2>Who are we?</h2>
+            <p>DSGN was founded in 2022, and since then we deserved our place on the market.<br>Our goal is 
+                to develop the best looking and most userfriendly websites
+                for anyone who needs one.</p>
+        </div>
+    </div>
+
+    <div class="services" id="Services">
+        <div class="headline">
+            <h1>S E R V I C E S</h1>
+        </div>
+        <div class="row cards-section">
+
+            <div class="col-sm-12 col-md-6 col-xl-6">
+                <div class="card" style="width: auto;">
+                    <div class="card-body">
+                      <h5 class="card-title">The complete package</h5>
+                      <p class="card-text">In this case we start from nothing and build a webpage that suits you, with the required functionalities.
+                                            We also give you advices in connection with maintance,
+                                             or we can even run the website from our servers for you.
+                      </p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-xl-6">
+                <div class="card" style="width: auto;">
+                  <div class="card-body">
+                    <h5 class="card-title">Website "repairs"</h5>
+                    <p class="card-text">If you happened to have a website, but ran into problems with maintance,
+                                          or you just feel like it's a bit old-fashioned, we can help you out.</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-xl-6">
+                <div class="card" style="width: auto;">
+                  <div class="card-body">
+                    <h5 class="card-title">Advices</h5>
+                    <p class="card-text">Before you do anything, you can just have a little chat with our experts about your problems or dilemmas.
+                                            We can give you advices about the online platforms of your business.
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-xl-6">
+                <div class="card" style="width: auto;">
+                  <div class="card-body">
+                    <h5 class="card-title">Hosting and Databases</h5>
+                    <p class="card-text">You can also rent servers for your existing webpage or database, to make sure your services are always up.</p>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="feedback" id="Feedback">
+        <div class="headline">
+            <h1>F E E D B A C K</h1>
+        </div>
+
+        <div class="feedbackContent">
+            <h2>Leave your feedback</h2>
+            <p class="d-none d-md-block d-xl-block">Let us know if you have any questions or if you have already worked with us, write about your experiences.</p>
+            <span class="textarea" id="text_input" role="textbox" contenteditable="true" onkeypress="return (this.innerText.length <= 128)"></span>
+            <input type="button" onclick="MsgSend()" value="Send">
+        </div>
+
+        <div class="footer">
+            <a href="#Home">Go back to top</a>
+        </div>
+
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="message.js"></script>
+
+</body>
+</html>
