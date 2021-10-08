@@ -1,0 +1,85 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background-color: #050505;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    overflow-x: hidden;
+}
+
+.home{
+    min-height: 100vh;
+}
+
+.navigation{
+    padding: 0px;
+    display: flex;
+    height: 10vh;
+}
+
+.navbar{
+    padding-top: 0rem;
+    position: fixed;
+    width: 100%;
+}
+
+.wrapper{
+    margin-top: -3px;
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(to right, rgb(0, 200,255), rgb(9, 240,180));
+    padding: 3px;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.navbar-nav{
+    background-color: #151515;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.nav-link{
+    width: 1.5vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-radius: 10%;
+    width: 3rem;
+    height: 3rem;
+}
+
+.nav-link:hover{
+    background-color: #454545;
+}
+
+.nav-link img{
+    width: 1.5vw;
+}
+
+.img-3{
+    margin-top: 2px;
+    margin-right: 1px;
+}
+
+.homeContent{
+    margin-top: 25vh;
+    padding: 5rem 10rem 5rem 10rem;
+}
+
+.homeContent .content-box{
+    border-left: 2px solid rgb(9, 209, 199);
+}
+
+.homeContent h1{
+    font-size: 100px;
+    margin-left: 3rem;
+}
+
+.homeContent p{
+    font-size: 44px;
+    margin-left: 3rem;
+}
+
