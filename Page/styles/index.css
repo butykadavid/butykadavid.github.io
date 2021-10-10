@@ -10,8 +10,10 @@ body{
     overflow-x: hidden;
 }
 
-.home{
-    min-height: 100vh;
+.content{
+    margin-left: 12vw;
+    border-left: 2px solid rgb(9, 209, 199);
+    z-index: -1;
 }
 
 .navigation{
@@ -24,9 +26,10 @@ body{
     padding-top: 0rem;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
-.wrapper{
+.wrapper-nav{
     margin-top: -3px;
     padding: 1rem;
     position: relative;
@@ -64,22 +67,48 @@ body{
     margin-right: 1px;
 }
 
-.homeContent{
-    margin-top: 25vh;
+.page{
+    margin-bottom: 50vh;
+    height: fit-content;
+    font-weight: 1;
+}
+
+.page::before{
+    content: "";
+    display: inline-block;
+    background-color: rgb(9, 209, 199);
+    width: 15px;
+    height: 15px;
+}
+
+.page-0-Content{
     padding: 5rem 10rem 5rem 10rem;
 }
 
-.homeContent .content-box{
-    border-left: 2px solid rgb(9, 209, 199);
+.page-1-Content{
+    padding: 5rem 10rem 5rem 10rem;
 }
 
-.homeContent h1{
+.page-1-Content h1{
     font-size: 100px;
-    margin-left: 3rem;
+    margin-left: 1rem;
 }
 
-.homeContent p{
+.page-1-Content p{
     font-size: 44px;
-    margin-left: 3rem;
+    margin-left: 1rem;
 }
 
+.page-2-Content{
+    padding: 5rem 10rem 5rem 10rem;
+}
+
+.page-2-Content h1{
+    font-size: 100px;
+    margin-left: 1rem;
+}
+
+.page-2-Content p{
+    font-size: 44px;
+    margin-left: 1rem;
+}
