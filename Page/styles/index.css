@@ -2,8 +2,25 @@
     display: none;
 }
 
+@font-face {
+    font-family: Teko-normal;
+    src: url(../fonts/Teko/Teko-Medium.ttf);
+}
+
+@font-face {
+    font-family: Teko-thin;
+    src: url(../fonts/Teko/Teko-Light.ttf);
+}
+
+@font-face {
+    font-family: RobotoMono;
+    src: url(../fonts/RobotoMono/RobotoMono-VariableFont_wght.ttf);
+}
+
 body{
-    background-color: #050505;
+    font-family: "Teko-thin";
+    letter-spacing: 0.5vw;
+    background-color: #151515;
     background-attachment: fixed;
     background-size: cover;
     color: white;
@@ -11,65 +28,25 @@ body{
 }
 
 .content{
+    margin-top: 20vh;
+    margin-bottom: 20vh;
     margin-left: 12vw;
     border-left: 2px solid rgb(9, 209, 199);
     z-index: -1;
 }
 
-.navigation{
-    padding: 0px;
-    display: flex;
-    height: 10vh;
-}
-
-.navbar{
-    padding-top: 0rem;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-}
-
-.wrapper-nav{
-    margin-top: -3px;
-    padding: 1rem;
-    position: relative;
-    background: linear-gradient(to right, rgb(0, 200,255), rgb(9, 240,180));
-    padding: 3px;
-    border-radius: 0px 0px 12px 12px;
-}
-
-.navbar-nav{
-    background-color: #151515;
-    border-radius: 0px 0px 10px 10px;
-}
-
-.nav-link{
-    width: 1.5vw;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 50px;
-    margin-left: 50px;
-    border-radius: 10%;
-    width: 3rem;
-    height: 3rem;
-}
-
-.nav-link:hover{
-    background-color: #454545;
-}
-
-.nav-link img{
-    width: 1.5vw;
-}
-
-.img-3{
-    margin-top: 2px;
-    margin-right: 1px;
+.content::after{
+    content: "";
+    display: inline-block;
+    background-color: rgb(9, 209, 199);
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    margin-left: -0.65rem;
 }
 
 .page{
-    margin-bottom: 50vh;
-    height: fit-content;
+    height: 110vh;
     font-weight: 1;
 }
 
@@ -77,38 +54,22 @@ body{
     content: "";
     display: inline-block;
     background-color: rgb(9, 209, 199);
-    width: 15px;
-    height: 15px;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    margin-left: -0.65rem;
 }
 
-.page-0-Content{
-    padding: 5rem 10rem 5rem 10rem;
+.page-Content{
+    padding: 5rem 10vw 5rem 8vw;
 }
 
-.page-1-Content{
-    padding: 5rem 10rem 5rem 10rem;
-}
-
-.page-1-Content h1{
-    font-size: 100px;
+.page-Content h1{
+    font-size: 9vw;
     margin-left: 1rem;
 }
 
-.page-1-Content p{
-    font-size: 44px;
-    margin-left: 1rem;
-}
-
-.page-2-Content{
-    padding: 5rem 10rem 5rem 10rem;
-}
-
-.page-2-Content h1{
-    font-size: 100px;
-    margin-left: 1rem;
-}
-
-.page-2-Content p{
-    font-size: 44px;
+.page-Content p{
+    font-size: 4vw;
     margin-left: 1rem;
 }
