@@ -2,6 +2,12 @@
     display: none;
 }
 
+:root{
+    --primary-color: rgb(92, 118, 148);
+    --secondary-color: rgb(253, 194, 66);
+    --bg-color: rgba(56, 84, 116, 0.555);
+}
+
 @font-face {
     font-family: Teko-normal;
     src: url(../fonts/Teko/Teko-Medium.ttf);
@@ -20,29 +26,30 @@
 body{
     font-family: "Teko-thin";
     letter-spacing: 0.5vw;
-    background-color: #151515;
+    background-color: var(--bg-color);
     background-attachment: fixed;
     background-size: cover;
-    color: white;
+    color: var(--secondary-color);
     overflow-x: hidden;
 }
 
-.content{
+.start-content{
     margin-top: 20vh;
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
     margin-left: 12vw;
-    border-left: 2px solid rgb(9, 209, 199);
+    border-left: 2px solid var(--primary-color);
     z-index: -1;
 }
 
-.content::after{
+.start-content::after{
     content: "";
     display: inline-block;
-    background-color: rgb(9, 209, 199);
+    background-color: var(--primary-color);
     width: 1.2rem;
     height: 1.2rem;
     border-radius: 50%;
     margin-left: -0.65rem;
+    margin-bottom: -1rem;
 }
 
 .page{
@@ -53,7 +60,7 @@ body{
 .page::before{
     content: "";
     display: inline-block;
-    background-color: rgb(9, 209, 199);
+    background-color: var(--primary-color);
     width: 1.2rem;
     height: 1.2rem;
     border-radius: 50%;
@@ -72,4 +79,20 @@ body{
 .page-Content p{
     font-size: 4vw;
     margin-left: 1rem;
+}
+
+.home{
+    height: 100vh;
+    background-image: url("../img/DigitalLandscape_1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 40vh;
+    padding-left: 2vw;
+}
+
+.home-content h1{
+    font-size: 20vw;
+    color: transparent;
+    letter-spacing: 1vw;
+    -webkit-text-stroke: 1px var(--secondary-color);
 }
