@@ -33,7 +33,7 @@ const RelaxedMountainsTheme = function(){
     document.body.style.setProperty('--bg-color',"rgba(255,243,234)")
 }
 
-const ColorfulFallTheme = function(){
+const PeacefulFallTheme = function(){
 
     document.body.style.setProperty('--primary-color',"rgb(144,88,30)")
     document.body.style.setProperty('--secondary-color',"rgb(80,142,163)")

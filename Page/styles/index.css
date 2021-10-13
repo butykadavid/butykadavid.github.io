@@ -35,7 +35,6 @@ body{
 
 .start-content{
     margin-top: 20vh;
-    margin-bottom: 10vh;
     margin-left: 12vw;
     border-left: 2px solid var(--primary-color);
     z-index: -1;
@@ -92,4 +91,14 @@ body{
 
 .card:hover{
     background-color: var(--primary-color);
+}
+
+.home{
+    height: 100vh;
+    border-top: 3px solid var(--primary-color);
+}
+
+.home h1{
+    font-size: 10rem;
+
 }
