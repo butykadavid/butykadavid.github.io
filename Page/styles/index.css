@@ -4,7 +4,7 @@
 
 :root{
     --primary-color: rgb(92, 118, 148);
-    --secondary-color: rgb(253, 194, 66);
+    --secondary-color: rgb(251, 216, 23);
     --bg-color: rgba(56, 84, 116, 0.555);
 }
 
@@ -30,6 +30,7 @@ body{
     background-size: cover;
     color: var(--secondary-color);
     overflow-x: hidden;
+    transition: background 0.25s ease-in-out;
 }
 
 .start-content{
