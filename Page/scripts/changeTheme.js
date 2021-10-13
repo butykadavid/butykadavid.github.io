@@ -5,7 +5,35 @@ const OriginalTheme = function(){
     document.body.style.setProperty('--bg-color',"rgba(56, 84, 116, 0.555)")
 }
 
-const LightTheme = function(){
+const EasternSunsetTheme = function(){
+
+    document.body.style.setProperty('--primary-color',"rgb(51,48,54)")
+    document.body.style.setProperty('--secondary-color',"rgb(255,150,26)")
+    document.body.style.setProperty('--bg-color',"rgba(57,62,137)")
+}
+
+const CyberpunkTheme = function(){
+
+    document.body.style.setProperty('--primary-color',"rgb(255,220,0)")
+    document.body.style.setProperty('--secondary-color',"rgb(230,0,231)")
+    document.body.style.setProperty('--bg-color',"rgba(47,0,93)")
+}
+
+const IntergalacticCrimsonTheme = function(){
+
+    document.body.style.setProperty('--primary-color',"rgb(51,184,255)")
+    document.body.style.setProperty('--secondary-color',"rgb(37,37,37)")
+    document.body.style.setProperty('--bg-color',"rgba(255,255,255)")
+}
+
+const RelaxedMountainsTheme = function(){
+
+    document.body.style.setProperty('--primary-color',"rgb(51,184,255)")
+    document.body.style.setProperty('--secondary-color',"rgb(37,37,37)")
+    document.body.style.setProperty('--bg-color',"rgba(255,255,255)")
+}
+
+const ColorfulFallTheme = function(){
 
     document.body.style.setProperty('--primary-color',"rgb(51,184,255)")
     document.body.style.setProperty('--secondary-color',"rgb(37,37,37)")
