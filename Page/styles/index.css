@@ -24,8 +24,7 @@
 }
 
 body{
-    font-family: "Teko-thin";
-    letter-spacing: 0.5vw;
+    font-family: "RobotoMono";
     background-color: var(--bg-color);
     background-attachment: fixed;
     background-size: cover;
@@ -72,27 +71,24 @@ body{
 }
 
 .page-Content h1{
-    font-size: 9vw;
-    margin-left: 1rem;
+    font-size: 40px;
 }
 
 .page-Content p{
-    font-size: 4vw;
+    font-size: 20px;
+}
+
+.content-box{
     margin-left: 1rem;
+    margin-right: 1rem;
 }
 
-.home{
-    height: 100vh;
-    background-image: url("../img/DigitalLandscape_1.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    padding-top: 40vh;
-    padding-left: 2vw;
+.card{
+    background-color: transparent;
+    border-color: var(--secondary-color);
+    margin-top: 5vh;
 }
 
-.home-content h1{
-    font-size: 20vw;
-    color: transparent;
-    letter-spacing: 1vw;
-    -webkit-text-stroke: 1px var(--secondary-color);
+.card:hover{
+    background-color: var(--primary-color);
 }
