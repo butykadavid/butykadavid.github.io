@@ -1,104 +1,135 @@
-::-webkit-scrollbar{
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+    --bonus-primary: #ff7eee; 
+    --bonus-secondary: #df49a6; 
+}
+
+body::-webkit-scrollbar{
     display: none;
 }
 
-:root{
-    --primary-color: rgb(92, 118, 148);
-    --secondary-color: rgb(251, 216, 23);
-    --bg-color: rgba(56, 84, 116, 0.555);
-}
-
-@font-face {
-    font-family: Teko-normal;
-    src: url(../fonts/Teko/Teko-Medium.ttf);
-}
-
-@font-face {
-    font-family: Teko-thin;
-    src: url(../fonts/Teko/Teko-Light.ttf);
-}
-
-@font-face {
-    font-family: RobotoMono;
-    src: url(../fonts/RobotoMono/RobotoMono-VariableFont_wght.ttf);
-}
-
 body{
-    font-family: "RobotoMono";
-    background-color: var(--bg-color);
-    background-attachment: fixed;
-    background-size: cover;
-    color: var(--secondary-color);
-    overflow-x: hidden;
-    transition: background 0.25s ease-in-out;
-}
-
-.start-content{
-    margin-top: 20vh;
-    margin-left: 12vw;
-    border-left: 2px solid var(--primary-color);
-    z-index: -1;
-}
-
-.start-content::after{
-    content: "";
-    display: inline-block;
-    background-color: var(--primary-color);
-    width: 1.2rem;
-    height: 1.2rem;
-    border-radius: 50%;
-    margin-left: -0.65rem;
-    margin-bottom: -1rem;
-}
-
-.page{
-    height: 110vh;
-    font-weight: 1;
-}
-
-.page::before{
-    content: "";
-    display: inline-block;
-    background-color: var(--primary-color);
-    width: 1.2rem;
-    height: 1.2rem;
-    border-radius: 50%;
-    margin-left: -0.65rem;
-}
-
-.page-Content{
-    padding: 5rem 10vw 5rem 8vw;
-}
-
-.page-Content h1{
-    font-size: 40px;
-}
-
-.page-Content p{
-    font-size: 20px;
-}
-
-.content-box{
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-.card{
-    background-color: transparent;
-    border-color: var(--secondary-color);
-    margin-top: 5vh;
-}
-
-.card:hover{
-    background-color: var(--primary-color);
+    background-color: var(--bg-primary);
+    color: var(--text-secondary);
 }
 
 .home{
     height: 100vh;
-    border-top: 3px solid var(--primary-color);
+    display: flex;
+    justify-content: flex-end;
 }
 
-.home h1{
-    font-size: 10rem;
+.content{
+    margin-top: -10vh;
+    margin-right: 10vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: right;
+    transition: transform var(--transition-speed) ease-in-out;
+}
 
+.content h1{
+    font-size: 13vw;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--bonus-secondary);
+    background: url('../img/night-sky.jpg');
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    background-attachment: fixed;
+    animation: back 25s linear infinite;
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+@keyframes headerCover{
+    100%{
+        background-position: 2000px 1000px;
+    }
+}
+
+p{
+    font-size: 2vw;
+}
+.highlight{
+    transition: color 0.25s ease-in-out;
+    color: var(--bonus-secondary);
+}
+
+.content:hover{
+    transform: rotateZ(50deg);
+}
+
+.highlight:hover{
+    color: var(--bonus-primary);
+}
+
+.about{
+    height: 15vh;
+}
+
+.header{
+    display: flex;
+    height: 15vh;
+    justify-content: center;
+    align-content: center;
+    padding: 35px;
+    background-attachment: fixed;
+    background-image: url('../img/magenta-purple-cover.jpg');
+    border-bottom: 5px solid var(--bg-secondary);
+    border-top: 5px solid var(--bg-secondary);
+    background-position: 0 0;
+    animation: headerCover 60s linear infinite;
+}
+
+.header h1{
+    font-size: 2vw;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.row{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.aboutContent{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 10vw;
+    text-align: justify;
+}
+
+.aboutContent h1{
+    font-size: 2vw;
+    color: var(--text-primary);
+    margin-bottom: 10vh;
+    writing-mode: vertical-lr;
+    transform: rotateZ(180deg);
+    background: var(--bg-secondary);
+    border-radius: 10px;
+    padding: 30px 15px;
+}
+
+.aboutContent a{
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+}
+
+.vertical{
+    height: 70vh;
 }
