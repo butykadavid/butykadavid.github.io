@@ -4,9 +4,9 @@
 }
 
 :root{
-    --primary-text: #fff;
-    --secondary-text: #959595;
-    --primay-color: #252525;
+    --primary-text: #959595;
+    --secondary-text: #636363;
+    --primay-color: #050505;
     --secondary-color: #454545;
     --bonus-color: #FF5B3B;
 }
@@ -83,6 +83,8 @@ body::-webkit-scrollbar{
     justify-content: flex-start;
     padding-left: 5vw;
     font-size: 4vw;
+    color: var(--secondary-text);
+    animation: home-1 30s ease-in-out 0s infinite alternate none;
 }
 
 @keyframes home-1{
@@ -95,6 +97,7 @@ body::-webkit-scrollbar{
     justify-content: flex-end;
     padding-right: 15vw;
     font-size: 2vw;
+    animation: home-2 20s ease-in-out 0s infinite alternate none;
 }
 
 @keyframes home-2{
@@ -107,10 +110,12 @@ body::-webkit-scrollbar{
     justify-content: center;
     padding-left: 0vw;
     font-size: 3vw;
+    color: var(--secondary-text);
+    animation: home-3 15s ease-in-out 0s infinite alternate none;
 }
 
 @keyframes home-3{
-    from{padding-left: -30vw;}
+    from{padding-left: -25vw;}
     to{padding-left: 25vw;}
 }
 
@@ -119,6 +124,7 @@ body::-webkit-scrollbar{
     justify-content: flex-end;
     padding-right: 5vw;
     font-size: 2vw;
+    animation: home-4 12s ease-in-out 0s infinite alternate none;
 }
 
 @keyframes home-4{
@@ -127,14 +133,14 @@ body::-webkit-scrollbar{
 }
 
 .content-break{
-    height: 45vh;
+    height: 10vh;
     background-image: url("../img/bg.jpg");
     background-attachment: fixed;
     background-size: 90vw;
     background-position-x: center;
     background-position-y: center;
     background-repeat: no-repeat;
-    margin-right: 30vw;
+    margin-right: 0vw;
 }
 
 .more{
@@ -150,11 +156,15 @@ body::-webkit-scrollbar{
     margin-top: 5vh;
     margin-left: 5vw;
     letter-spacing: 0.3rem;
+    font-size: 2vw;
 }
 
 .section{
     display: flex;
     color: var(--secondary-text);
+    justify-content: space-evenly;
+    filter: grayscale(100%);
+    transition: filter 0.25s ease-in-out;
 }
 
 .section-text{
@@ -164,6 +174,15 @@ body::-webkit-scrollbar{
     text-align: justify;
     padding: 10vw;
     row-gap: 3vh;
+    font-size: 1vw;
+}
+
+.section-design{ 
+    min-width: 35vw;
+}
+
+.section:hover{
+    filter: grayscale(0%);
 }
 
 .highlight{
