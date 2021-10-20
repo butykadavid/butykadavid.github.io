@@ -97,6 +97,7 @@ body::-webkit-scrollbar{
     justify-content: flex-end;
     padding-right: 15vw;
     font-size: 2vw;
+    color: var(--bonus-color);
     animation: home-2 20s ease-in-out 0s infinite alternate none;
 }
 
@@ -136,7 +137,7 @@ body::-webkit-scrollbar{
     height: 10vh;
     background-image: url("../img/bg.jpg");
     background-attachment: fixed;
-    background-size: 90vw;
+    background-size: cover;
     background-position-x: center;
     background-position-y: center;
     background-repeat: no-repeat;
@@ -145,11 +146,18 @@ body::-webkit-scrollbar{
 
 .more{
     margin-top: 10vh;
-    min-height: 100vh;
+    margin-bottom: 10vh;
+    min-height: 80vh;
     height: fit-content;
     display: flex;
     flex-direction: column;
     color: var(--primary-text);
+    filter: grayscale(100%);
+    transition: filter 0.25s ease-in-out;
+}
+
+.more:hover{
+    filter: grayscale(0%);
 }
 
 .more h1{
@@ -162,9 +170,7 @@ body::-webkit-scrollbar{
 .section{
     display: flex;
     color: var(--secondary-text);
-    justify-content: space-evenly;
-    filter: grayscale(100%);
-    transition: filter 0.25s ease-in-out;
+    justify-content: flex-start;
 }
 
 .section-text{
@@ -179,10 +185,212 @@ body::-webkit-scrollbar{
 
 .section-design{ 
     min-width: 35vw;
+    margin-top: 5vh;
 }
 
-.section:hover{
+.section-design p{
+    font-size: 0.65vw;
+    letter-spacing: 0.3rem;
+}
+
+.section-design img{
+    width: 35vw;
+}
+
+.contact{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    min-height: 70vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-text);
+    filter: grayscale(100%);
+    transition: filter 0.25s ease-in-out;
+}
+
+.contact:hover{
     filter: grayscale(0%);
+}
+
+.contact h1{
+    margin-top: 5vh;
+    margin-left: 5vw;
+    letter-spacing: 0.3rem;
+    font-size: 2vw;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    padding-top: 10vh;
+    padding-left: 10vw;
+    row-gap: 3vh;
+    font-size: 1vw;
+}
+
+.form .email{
+    width: 35vw;
+    background-color: transparent;
+    color: var(--secondary-text);
+    padding-left: 1vw;
+    border-bottom: 1px solid var(--secondary-color);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    transition: border 0.25s ease-in-out;
+    outline: none;
+}
+
+.form .message{
+    width: 35vw;
+    background-color: transparent;
+    color: var(--secondary-text);
+    padding-left: 1vw;
+    border: 1px solid var(--secondary-color);
+    transition: border 0.25s ease-in-out;
+    outline: none;
+}
+
+.form .email:hover{
+    border-bottom: 1px solid var(--primary-text);
+}
+
+.form .email:focus{
+    border-bottom: 1px solid var(--bonus-color);
+}
+
+.form .message:hover{
+    border: 1px solid var(--primary-text);
+}
+
+.form .message:focus{
+    border: 1px solid var(--bonus-color);
+}
+
+.form button{
+    width: 15vw;
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--primary-text);
+    height: 3vw;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.form button:hover{
+    width: 15vw;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    color: var(--primary-text);
+    height: 3vw;
+}
+
+.form-text{
+    min-width: 35vw;
+    margin-top: 5vh;
+    padding: 15vh;
+    font-size: 1vw;
+}
+
+.footer{
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    font-size: 1vw;
+}
+
+.footer p{
+    margin-right: 1vw;
+}
+
+@media only screen and (max-width: 1100px) {
+    .more{
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+    }
+    .more h1{
+        margin-left: 0vw;
+        text-align: center;
+        font-size: 4.5vw;
+    }
+    .section{
+        flex-direction: column;
+    }
+    .section-text{
+        font-size: 3vw;
+    }
+    .section-design{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0vh;
+    }
+    .section-design p{
+        text-align: center;
+        font-size: 2vw;
+        letter-spacing: normal;
+    }
+
+    .section-design img{
+        width: 50vw;
+    }
+    .contact{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        min-height: 80vh;
+    }
+    .contact h1{
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        font-size: 4.5vw;
+    }
+    .mobile-reversed{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .form{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .form form{
+        padding: 0px;
+        margin: 0px;
+    }
+    .form .email{
+        width: 75vw;
+        font-size: 3vw;
+    }
+    .form .message{
+        width: 75vw;
+        font-size: 3vw;
+    }
+    .form button{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 3vw;
+        width: 30vw;
+        height: 5vw;
+    }
+    .form-text{
+        padding: 0px;
+        margin: 5vh;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10vh;
+        padding-right: 10vh;
+        font-size: 3vw;
+        text-align: justify;
+    }
+    .footer p{
+        font-size: 2vw;
+        margin-right: 2vw;
+    }
 }
 
 .highlight{
