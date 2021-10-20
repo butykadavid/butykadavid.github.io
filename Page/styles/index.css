@@ -396,3 +396,33 @@ body::-webkit-scrollbar{
 .highlight{
     color: var(--bonus-color);
 }
+
+.thankyou-1{
+    display: flex;
+    justify-content: center;
+    color: var(--bonus-color);
+}
+
+.thankyou-2{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center
+}
+
+.thankyou-2 h1{
+    text-align: center;
+    font-size: 5vh;
+}
+
+.thankyou-2 a{
+    text-decoration: none;
+    color: var(--secondary-text);
+    font-size: 3vh;
+    margin: 5vw;
+    transition: color 0.25s ease-in-out;
+}
+
+.thankyou-2 a:hover{
+    color: var(--primary-text);
+    text-decoration: line-through;
+}
