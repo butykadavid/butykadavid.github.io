@@ -18,9 +18,18 @@
     src: url('../font/ImperialScript.ttf');
 }
 
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+}
+
 body {
     width: 100vw;
-    height: 100vh;
     overflow: hidden;
     margin: 0px;
     background: white;
