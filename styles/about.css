@@ -1,6 +1,6 @@
 .section__container {
     width: 100vw;
-    height: 80vh;
+    height: 8vh;
     padding-top: 10vh;
     background: #F2EFED;
     display: flex;
@@ -128,7 +128,10 @@
         display: block;
         overflow: hidden;
         width: 100vw;
-        height: 100vh;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
         background: #F2EFED;
     }
 
@@ -142,7 +145,7 @@
 
     .page {
         width: 85vw;
-        height: 80vh;
+        height: 80%;
         padding-left: 15vw;
         position: absolute;
         top: 10vh;

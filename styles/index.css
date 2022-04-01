@@ -239,7 +239,7 @@ body {
 
     .main__container {
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         padding-top: 10vh;
         background: #F2EFED;
         display: flex;
