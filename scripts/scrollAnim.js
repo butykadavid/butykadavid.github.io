@@ -7,18 +7,20 @@ $(document).bind("mousewheel DOMMouseScroll MozMousePixelScroll", function (even
 });
 
 var ts;
-$(document).bind('touchstart', function (e){
-   ts = e.originalEvent.touches[0].clientY;
+$(document).bind('touchstart', function (e) {
+    e.preventDefault();
+    ts = e.originalEvent.touches[0].clientY;
 });
 
-$(document).bind('touchend', function (e){
+$(document).bind('touchend', function (e) {
+    e.preventDefault();
     var te = e.originalEvent.changedTouches[0].clientY;
-    if(ts > te+5){
-       animControlTouchMove("down")
-    }else if(ts < te-5){
-       animControlTouchMove("up")
+    if (ts > te + 5) {
+        animControlTouchMove("down")
+    } else if (ts < te - 5) {
+        animControlTouchMove("up")
     }
- });
+});
 
 function navigateTo(event) {
     isMoving = true;
