@@ -25,7 +25,7 @@ html {
 
 body {
     width: 100vw;
-    height: -webkit-fill-available;
+    height: 100%;
     overflow: hidden;
     margin: 0px;
     background: white;
@@ -39,6 +39,10 @@ body {
 
 .sm {
     display: none;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .main__container {
