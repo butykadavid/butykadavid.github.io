@@ -6,6 +6,10 @@ $(document).bind("mousewheel DOMMouseScroll MozMousePixelScroll", function (even
     navigateTo(event);
 });
 
+$(document).on('touchmove', function () {
+    $(document).trigger('mousewheel');
+});
+
 function navigateTo(event) {
     isMoving = true;
     animControl(event)
