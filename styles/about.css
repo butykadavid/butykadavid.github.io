@@ -102,17 +102,14 @@
         font-size: 5vh;
         line-height: 5vh;
     }
-
     .section__2 p {
         font-size: 2vh;
         line-height: 2vh;
     }
-
     .section__3 h2 {
         font-size: 5vh;
         line-height: 5vh;
     }
-
     .section__3 p {
         font-size: 2vh;
         line-height: 2vh;
@@ -123,7 +120,6 @@
     .lg {
         display: none;
     }
-
     .sm {
         display: block;
         overflow: hidden;
@@ -134,15 +130,12 @@
         left: 0;
         background: #F2EFED;
     }
-
     .navig {
         position: fixed;
     }
-
     .navig .navig__item {
         width: 20vw;
     }
-
     .page {
         width: 85vw;
         height: 80%;
@@ -153,22 +146,18 @@
         align-items: center;
         justify-content: center;
     }
-
     .first__page {
         z-index: 3;
     }
-
     .second__page {
         z-index: 2;
         opacity: 0;
     }
-
     .third__page {
         z-index: 1;
         opacity: 0;
     }
-
-    .page__title__container{
+    .page__title__container {
         position: absolute;
         top: 10%;
         left: 0;
@@ -178,7 +167,6 @@
         justify-content: center;
         align-items: center;
     }
-
     .page__title {
         margin: auto;
         width: 100%;
@@ -188,7 +176,6 @@
         justify-content: center;
         align-items: center;
     }
-
     .page__title .page__title__text {
         letter-spacing: 2vh;
         font-size: 3vh;
@@ -197,11 +184,10 @@
         transform: rotateZ(-90deg);
         color: #252525;
     }
-
     .page__content {
         width: 85vw;
         height: 70%;
-        margin: 5vw;
+        margin: 0vh 5vw;
         padding: 2vw;
         background-color: #252525;
         color: white;
@@ -209,14 +195,12 @@
         flex-direction: column;
         justify-content: center;
     }
-
     .page__content .content__title {
         margin: 0px 7px;
         font-size: 6vh;
         line-height: 6vh;
         border-bottom: 2px solid white;
     }
-
     .page__content p {
         font-size: 3vh;
         line-height: 3vh;
@@ -224,50 +208,40 @@
         margin: 7px;
         color: #d3d3d3;
     }
-
     .indicator {
         width: 25px;
         opacity: 0.75;
         position: absolute;
     }
-
     .indicator__up {
         top: 7%;
         transform: rotateZ(180deg);
     }
-
     .indicator__down {
         bottom: 5%;
     }
-
     .footer {
         position: fixed;
         bottom: 0;
     }
-
     .anim__in {
         animation: anim__in 0.35s linear forwards;
     }
-
     .anim__out {
         animation: anim__out 0.35s linear forwards;
     }
-
     @keyframes anim__in {
         0% {
             opacity: 0;
         }
-
         100% {
             opacity: 1;
         }
     }
-
     @keyframes anim__out {
         0% {
             opacity: 1;
         }
-
         100% {
             opacity: 0;
         }
@@ -279,18 +253,15 @@
         width: 30vw;
         font-size: 2vh;
     }
-
     .page__title .page__title__text {
         letter-spacing: 2vh;
         font-size: 2.5vh;
         font-weight: 600;
     }
-
     .page__content .content__title {
         font-size: 5vh;
         line-height: 5vh;
     }
-
     .page__content p {
         font-size: 2.5vh;
         line-height: 2.5vh;

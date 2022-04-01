@@ -1,41 +1,33 @@
 var isMoving = false;
 const titlesAll = ['introduction', 'mentality', 'programming']
 
-$(document).bind("mousewheel DOMMouseScroll MozMousePixelScroll", function (event, delta) {
+$(document).bind("mousewheel DOMMouseScroll MozMousePixelScroll", function(event, delta) {
     if (isMoving) return;
     navigateTo(event);
 });
 
 var ts;
-$(document).bind('touchstart', function (e) {
+$(document).bind('touchstart', function(e) {
     ts = e.originalEvent.touches[0].clientY;
 });
 
-$(document).bind('touchend', function (e) {
+$(document).bind('touchend', function(e) {
 
-    if (navigator.userAgent.match(/Android/i)) {   // if you already work on Android system, you can        skip this step
+    if (navigator.userAgent.match(/Android/i)) { // if you already work on Android system, you can        skip this step
         e.preventDefault();
-        var te = e.originalEvent.changedTouches[0].clientY;
-        if (ts > te + 5) {
-            animControlTouchMove(e, "down")
-        } else if (ts < te - 5) {
-            animControlTouchMove(e, "up")
-        }
     }
-    else {
-        var te = e.originalEvent.changedTouches[0].clientY;
-        if (ts > te + 5) {
-            animControlTouchMove(e, "down")
-        } else if (ts < te - 5) {
-            animControlTouchMove(e, "up")
-        }
+    var te = e.originalEvent.changedTouches[0].clientY;
+    if (ts > te + 5) {
+        animControlTouchMove("down")
+    } else if (ts < te - 5) {
+        animControlTouchMove("up")
     }
 });
 
 function navigateTo(event) {
     isMoving = true;
     animControlMouseScroll(event)
-    setTimeout(function () {
+    setTimeout(function() {
         isMoving = false;
     }, 2250);
 }
@@ -75,7 +67,7 @@ function animControlMouseScroll(event) {
     }
 }
 
-function animControlTouchMove(event, direction) {
+function animControlTouchMove(direction) {
     const pages = document.querySelectorAll('.page')
     const title = document.querySelector('.page__title__text')
 
