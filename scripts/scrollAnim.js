@@ -8,17 +8,15 @@ $(document).bind("mousewheel DOMMouseScroll MozMousePixelScroll", function (even
 
 var ts;
 $(document).bind('touchstart', function (e) {
-    e.preventDefault();
     ts = e.originalEvent.touches[0].clientY;
 });
 
 $(document).bind('touchend', function (e) {
-    e.preventDefault();
     var te = e.originalEvent.changedTouches[0].clientY;
     if (ts > te + 5) {
-        animControlTouchMove("down")
+        animControlTouchMove(e, "down")
     } else if (ts < te - 5) {
-        animControlTouchMove("up")
+        animControlTouchMove(e, "up")
     }
 });
 
@@ -65,11 +63,14 @@ function animControlMouseScroll(event) {
     }
 }
 
-function animControlTouchMove(direction) {
+function animControlTouchMove(event, direction) {
     const pages = document.querySelectorAll('.page')
     const title = document.querySelector('.page__title__text')
 
-    console.log("ALMAAAAAA")
+    if (navigator.userAgent.match(/Android/i)) {   // if you already work on Android system, you can        skip this step
+        event.preventDefault();     //THIS IS THE KEY. You can read the difficult doc released by W3C to learn more.
+    }
+
     if (direction === "down") {
         for (let i = 0; i < pages.length; i++) {
             if (pages[i].classList.contains('anim__in') && i != (pages.length - 1)) {
