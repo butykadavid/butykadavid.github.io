@@ -7,11 +7,11 @@ $(document).bind("mousewheel DOMMouseScroll MozMousePixelScroll", function(event
 });
 
 var ts;
-$(document).bind('touchstart', function(e) {
+$('.page__content').bind('touchstart', function(e) {
     ts = e.originalEvent.touches[0].clientY;
 });
 
-$(document).bind('touchend', function(e) {
+$('.page__content').bind('touchend', function(e) {
 
     if (navigator.userAgent.match(/Android/i)) { // if you already work on Android system, you can        skip this step
         e.preventDefault();
