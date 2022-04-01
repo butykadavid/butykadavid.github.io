@@ -12,11 +12,23 @@ $(document).bind('touchstart', function (e) {
 });
 
 $(document).bind('touchend', function (e) {
-    var te = e.originalEvent.changedTouches[0].clientY;
-    if (ts > te + 5) {
-        animControlTouchMove(e, "down")
-    } else if (ts < te - 5) {
-        animControlTouchMove(e, "up")
+
+    if (navigator.userAgent.match(/Android/i)) {   // if you already work on Android system, you can        skip this step
+        e.preventDefault();
+        var te = e.originalEvent.changedTouches[0].clientY;
+        if (ts > te + 5) {
+            animControlTouchMove(e, "down")
+        } else if (ts < te - 5) {
+            animControlTouchMove(e, "up")
+        }
+    }
+    else {
+        var te = e.originalEvent.changedTouches[0].clientY;
+        if (ts > te + 5) {
+            animControlTouchMove(e, "down")
+        } else if (ts < te - 5) {
+            animControlTouchMove(e, "up")
+        }
     }
 });
 
@@ -66,10 +78,6 @@ function animControlMouseScroll(event) {
 function animControlTouchMove(event, direction) {
     const pages = document.querySelectorAll('.page')
     const title = document.querySelector('.page__title__text')
-
-    if (navigator.userAgent.match(/Android/i)) {   // if you already work on Android system, you can        skip this step
-        event.preventDefault();     //THIS IS THE KEY. You can read the difficult doc released by W3C to learn more.
-    }
 
     if (direction === "down") {
         for (let i = 0; i < pages.length; i++) {
