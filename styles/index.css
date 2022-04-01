@@ -24,12 +24,8 @@ html {
 }
 
 body {
-    height: 100%;
-    overflow: auto;
-}
-
-body {
     width: 100vw;
+    height: -webkit-fill-available;
     overflow: hidden;
     margin: 0px;
     background: white;
