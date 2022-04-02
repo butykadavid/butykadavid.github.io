@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('../font/Oswald.ttf');
+}
+
+.content__all {
+    width: 100vw;
+    height: 80vh;
+    padding-top: 10vh;
+    display: flex;
+    background: #f2efed;
+}
+
+.content__1 {
+    width: 40vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__1 div {
+    max-width: 30vw;
+    max-height: 60vh;
+    margin: 10vh 5vw;
+}
+
+.content__1 h2 {
+    font-size: 10vh;
+    line-height: 10vh;
+    margin: 10px 0px;
+    text-align: left;
+}
+
+.content__1 p {
+    font-size: 2.5vh;
+    line-height: 2.5vh;
+    margin: 10px 0px;
+    color: #252525;
+}
+
+.content__2 {
+    width: 40vw;
+    height: 60vh;
+    background: #252525;
+    margin: 10vh 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    row-gap: 3vh;
+    font-size: 1vw;
+    font-family: 'Oswald';
+}
+
+form .email {
+    width: 35vw;
+    background-color: transparent;
+    color: white;
+    padding: 0px 5px;
+    border-bottom: 2px solid #d3d3d3;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    transition: border 0.25s ease-in-out;
+    outline: none;
+    font-family: 'Oswald';
+}
+
+form .message {
+    width: 35vw;
+    background-color: transparent;
+    color: white;
+    padding: 0px 5px;
+    border: 2px solid #d3d3d3;
+    transition: border 0.25s ease-in-out;
+    outline: none;
+    font-family: 'Oswald';
+}
+
+form .email:hover {
+    border-bottom: 2px solid white;
+}
+
+form .email:focus {
+    border-bottom: 2px solid white;
+}
+
+form .message:hover {
+    border: 2px solid white;
+}
+
+form .message:focus {
+    border: 2px solid white;
+}
+
+form button {
+    width: 15vw;
+    background-color: transparent;
+    border: 2px solid #d3d3d3;
+    color: #d3d3d3;
+    height: 3vw;
+    transition: background-color 0.25s ease-in-out;
+    font-family: 'Oswald';
+}
+
+form button:hover {
+    width: 15vw;
+    border: 2px solid white;
+    color: white;
+    height: 3vw;
+}
+
+.form-text {
+    min-width: 35vw;
+    margin-top: 5vh;
+    padding: 15vh;
+    font-size: 1vw;
+}
+
+.footer__mobile{
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    body{
+        background: #252525;
+    }
+    .navig__logo {
+        display: none;
+    }
+
+    .content__all {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+    }
+
+    .content__1 {
+        height: 20%;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        background-color: #f2efed;
+    }
+
+    .content__1 div {
+        max-width: 80vw;
+        max-height: 20vh;
+        margin: 10vh 5vw;
+    }
+
+    .content__1 h2 {
+        margin-bottom: 0;
+    }
+
+    .content__1 p {
+        margin-top: 0;
+    }
+
+    .content__2 {
+        height: 80%;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer__mobile{
+        display: block;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .footer__mobile {
+        width: 100vw;
+        height: 8%;
+        position: fixed;
+        bottom: 0;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__mobile a {
+        height: 3vh;
+    }
+    .footer__mobile a img {
+        height: 3vh;
+        margin: 0px 15px;
+        opacity: 0.75;
+    }
+}
+
+@media (max-width: 700px) {
+    .content__1 h2 {
+        font-size: 6vh;
+        line-height: 6vh;
+    }
+
+    .content__1 p {
+        font-size: 3vh;
+    }
+    form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        row-gap: 3vh;
+        font-size: 1vw;
+    }
+    
+    form .email {
+        width: 80%;
+        background-color: transparent;
+        color: white;
+        padding-left: 1vw;
+        border-bottom: 2px solid #d3d3d3;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        transition: border 0.25s ease-in-out;
+        outline: none;
+    }
+    
+    form .message {
+        width: 80%;
+        background-color: transparent;
+        color: white;
+        padding-left: 1vw;
+        border: 2px solid #d3d3d3;
+        transition: border 0.25s ease-in-out;
+        outline: none;
+    }
+    
+    form .email:hover {
+        border-bottom: 2px solid white;
+    }
+    
+    form .email:focus {
+        border-bottom: 2px solid white;
+    }
+    
+    form .message:hover {
+        border: 2px solid white;
+    }
+    
+    form .message:focus {
+        border: 2px solid white;
+    }
+    
+    form button {
+        width: 25%;
+        background-color: transparent;
+        border: 2px solid #d3d3d3;
+        color: #d3d3d3;
+        height: 5%;
+        transition: background-color 0.25s ease-in-out;
+    }
+    
+    form button:hover {
+        border: 2px solid white;
+        color: white;
+    }
+    
+    .form-text {
+        min-width: 35vw;
+        margin-top: 5vh;
+        padding: 15vh;
+        font-size: 1vw;
+    }
+}
