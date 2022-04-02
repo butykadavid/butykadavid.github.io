@@ -1,5 +1,8 @@
 var isMoving = false;
 const titlesAll = ['introduction', 'mentality', 'programming']
+const targetSection = document.querySelectorAll('.page')
+
+console.log(targetSection)
 
 $(document).on("mousewheel DOMMouseScroll MozMousePixelScroll", function(event, delta) {
     if (isMoving) return;
@@ -7,11 +10,11 @@ $(document).on("mousewheel DOMMouseScroll MozMousePixelScroll", function(event, 
 });
 
 var ts;
-$(document).on('touchstart', function(e) {
+$(targetSection).on('touchstart', function(e) {
     ts = e.originalEvent.touches[0].clientY;
 });
 
-$(document).on('touchend', function(e) {
+$(targetSection).on('touchend', function(e) {
 
     if (navigator.userAgent.match(/Android/i)) { // if you already work on Android system, you can        skip this step
         e.preventDefault();
