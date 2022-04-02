@@ -1,6 +1,6 @@
 .section__container {
     width: 100vw;
-    height: 8vh;
+    height: 80vh;
     padding-top: 10vh;
     background: #F2EFED;
     display: flex;
@@ -10,6 +10,7 @@
 
 .navig {
     background: #F2EFED;
+    width: 40vw;
 }
 
 .section {
@@ -132,6 +133,7 @@
     }
     .navig {
         position: fixed;
+        width: 100vw;
     }
     .navig .navig__item {
         width: 20vw;
@@ -263,7 +265,7 @@
         line-height: 5vh;
     }
     .page__content p {
-        font-size: 2.5vh;
-        line-height: 2.5vh;
+        font-size: 2.2vh;
+        line-height: 2.2vh;
     }
 }

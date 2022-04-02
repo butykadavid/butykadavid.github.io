@@ -1,17 +1,17 @@
 var isMoving = false;
 const titlesAll = ['introduction', 'mentality', 'programming']
 
-$(document).bind("mousewheel DOMMouseScroll MozMousePixelScroll", function(event, delta) {
+$(document).on("mousewheel DOMMouseScroll MozMousePixelScroll", function(event, delta) {
     if (isMoving) return;
     navigateTo(event);
 });
 
 var ts;
-$('.page__content').bind('touchstart', function(e) {
+$(document).on('touchstart', function(e) {
     ts = e.originalEvent.touches[0].clientY;
 });
 
-$('.page__content').bind('touchend', function(e) {
+$(document).on('touchend', function(e) {
 
     if (navigator.userAgent.match(/Android/i)) { // if you already work on Android system, you can        skip this step
         e.preventDefault();

@@ -252,7 +252,7 @@ body {
         z-index: 3;
     }
     .navig .navig__item {
-        width: 30vw;
+        width: 20vw;
         padding: 0px;
         display: flex;
         justify-content: center;
@@ -293,12 +293,12 @@ body {
     }
     .center__content {
         width: 100vw;
-        height: 65%;
+        height: 70%;
         position: relative;
     }
     .center__content .center__img {
-        height: 40vh;
-        width: 40vh;
+        height: 50vh;
+        width: 50vh;
         position: absolute;
         top: 0;
         left: 5vw;
@@ -349,5 +349,15 @@ body {
         height: 3vh;
         margin: 0px 15px;
         opacity: 0.75;
+    }
+}
+
+@media (max-width: 500px){
+    .center__content .center__img {
+        height: 40vh;
+        width: 40vh;
+    }
+    .navig .navig__item {
+        width: 30vw;
     }
 }
