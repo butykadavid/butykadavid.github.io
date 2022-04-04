@@ -12,6 +12,7 @@ body{
     height: 80vh;
     padding-top: 10vh;
     display: flex;
+    align-items: center;
     background: #f2efed;
 }
 
@@ -46,7 +47,7 @@ body{
 
 .content__2 {
     width: 40vw;
-    height: 60vh;
+    height: 40vh;
     background: #252525;
     margin: 10vh 10vw;
     display: flex;
@@ -87,10 +88,6 @@ form .message {
     transition: border 0.25s ease-in-out;
     outline: none;
     font-family: 'Oswald';
-}
-
-form .message__mobile {
-    display: none;
 }
 
 form .email:hover {
@@ -179,14 +176,6 @@ form button:hover {
         width: 100vw;
         margin: 0;
         padding: 0;
-    }
-
-    form .message {
-        display: none;
-    }
-
-    form .message__mobile {
-        display: block;
     }
 
     .footer__mobile{
