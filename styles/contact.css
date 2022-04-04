@@ -89,6 +89,10 @@ form .message {
     font-family: 'Oswald';
 }
 
+form .message__mobile {
+    display: none;
+}
+
 form .email:hover {
     border-bottom: 2px solid white;
 }
@@ -175,6 +179,14 @@ form button:hover {
         width: 100vw;
         margin: 0;
         padding: 0;
+    }
+
+    form .message {
+        display: none;
+    }
+
+    form .message__mobile {
+        display: block;
     }
 
     .footer__mobile{
@@ -283,5 +295,11 @@ form button:hover {
         margin-top: 5vh;
         padding: 15vh;
         font-size: 1vw;
+    }
+}
+
+@media (max-height: 500px){
+    .footer__mobile{
+        display: none;
     }
 }
