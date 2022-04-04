@@ -3,6 +3,10 @@
     src: url('../font/Oswald.ttf');
 }
 
+body{
+    overflow: hidden;
+}
+
 .thankyou-1{
     display: flex;
     justify-content: center;
