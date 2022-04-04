@@ -3,6 +3,10 @@
     src: url('../font/Oswald.ttf');
 }
 
+.body{
+    overflow-y: auto;
+}
+
 .content__all {
     width: 100vw;
     height: 80vh;
@@ -154,7 +158,8 @@ form button:hover {
 
     .content__1 div {
         max-width: 80vw;
-        max-height: 20vh;
+        min-height: 20vh;
+        height: fit-content;
         margin: 10vh 5vw;
     }
 
@@ -184,7 +189,7 @@ form button:hover {
     .footer__mobile {
         width: 100vw;
         height: 8%;
-        position: fixed;
+        position: absolute;
         bottom: 0;
         background-color: white;
         display: flex;
