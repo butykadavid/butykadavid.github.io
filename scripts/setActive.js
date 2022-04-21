@@ -3,7 +3,7 @@ window.addEventListener('load', function () {
     const URL = window.location.href;
     const splitUrl = URL.split('/');
 
-    if (splitUrl[splitUrl.length - 1] === 'index.html') {
+    if (splitUrl[splitUrl.length - 1] === 'index.html' || splitUrl.length === 0) {
         navItems[0].classList.add('active');
         navItems[3].classList.add('active');
         console.log('active: home')
