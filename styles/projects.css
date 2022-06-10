@@ -1,0 +1,122 @@
+html, body{
+    height: auto;
+    overflow-y: auto;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.main__container{
+    background: #F2EFED;
+
+    flex-direction: column;
+
+    height: auto;
+}
+
+.navig{
+    position: fixed;
+
+    background: white;
+}
+
+.project{
+    width: 100vw;
+    height: 50vh;
+    background: linear-gradient( rgba(46, 255, 155, 0.5), rgba(0, 239, 210, 0.5) ), url("../img/Fantasy_3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+
+    margin-top: 10vh;
+
+    text-decoration: none;
+    color: #252525;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.4s background ease-in-out;
+}
+
+.project:hover{
+    background-size: 120%;
+}
+
+.project h1{
+    font-size: 7vh;
+    margin: 0;
+}
+
+.project p, .project a {
+    font-size: 3vh;
+
+    margin: 0px 10px;
+}
+
+.dots{
+    margin: 20vh 0vh;
+    text-align: center;
+    font-size: 10vh;
+}
+
+@media (max-width: 1000px) {
+
+    .sm{
+        overflow-y: auto;
+    }
+    
+    .main__container {
+        width: 100vw;
+        height: auto;
+        background: #F2EFED;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .project{
+        max-width: 80vw;
+        height: auto;
+
+        margin-top: 20vh;
+        padding: 10px 0px;
+
+        background: #252525;
+        color: #d5d5d5;
+
+        text-align: center;
+    }
+
+    .project h1 {
+        font-size: 6vh;
+    }
+
+    .project img{
+        max-width: 100%;
+    }
+
+    .project a {
+        margin-top: 10px;
+
+        color: white;
+        text-decoration: underline;
+    }
+
+    .dots{
+        margin: 10vh 0vh;
+        font-size: 10vh;
+    }
+
+    .footer{
+        position: fixed;
+        bottom: 0;
+    }
+
+}

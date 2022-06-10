@@ -291,4 +291,13 @@ form button:hover {
     .footer__mobile{
         display: none;
     }
+    .navig .navig__item {
+        width: 30vw;
+
+        padding: 0px 5px;
+
+        margin: 0 15px;
+        
+        font-size: 1.8vh;
+    }
 }

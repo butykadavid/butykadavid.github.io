@@ -2,8 +2,6 @@ var isMoving = false;
 const titlesAll = ['introduction', 'mentality', 'programming']
 const targetSection = document.querySelectorAll('.page')
 
-console.log(targetSection)
-
 $(document).on("mousewheel DOMMouseScroll MozMousePixelScroll", function(event, delta) {
     if (isMoving) return;
     navigateTo(event);
@@ -48,8 +46,6 @@ function animControlMouseScroll(event) {
                 pages[i].classList.add('anim__out')
                 pages[i + 1].classList.remove('anim__out')
                 pages[i + 1].classList.add('anim__in')
-                console.log('Out: ' + i)
-                console.log('In: ' + (i + parseInt(1)))
                 title.innerHTML = [titlesAll[i + 1]]
                 return
             }
@@ -61,8 +57,6 @@ function animControlMouseScroll(event) {
                 pages[i].classList.add('anim__out')
                 pages[i - 1].classList.remove('anim__out')
                 pages[i - 1].classList.add('anim__in')
-                console.log('Out: ' + i)
-                console.log('In: ' + (i - parseInt(1)))
                 title.innerHTML = [titlesAll[i - 1]]
                 return
             }
@@ -81,8 +75,6 @@ function animControlTouchMove(direction) {
                 pages[i].classList.add('anim__out')
                 pages[i + 1].classList.remove('anim__out')
                 pages[i + 1].classList.add('anim__in')
-                console.log('Out: ' + i)
-                console.log('In: ' + (i + parseInt(1)))
                 title.innerHTML = [titlesAll[i + 1]]
                 return
             }
@@ -94,8 +86,6 @@ function animControlTouchMove(direction) {
                 pages[i].classList.add('anim__out')
                 pages[i - 1].classList.remove('anim__out')
                 pages[i - 1].classList.add('anim__in')
-                console.log('Out: ' + i)
-                console.log('In: ' + (i - parseInt(1)))
                 title.innerHTML = [titlesAll[i - 1]]
                 return
             }

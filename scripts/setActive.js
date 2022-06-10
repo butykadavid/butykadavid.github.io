@@ -5,15 +5,16 @@ window.addEventListener('load', function () {
 
     if (splitUrl[splitUrl.length - 1] === 'index.html' || !URL.includes('/')) {
         navItems[0].classList.add('active');
-        navItems[3].classList.add('active');
-        console.log('active: home')
+        navItems[4].classList.add('active');
     } else if (splitUrl[splitUrl.length - 1] === 'about.html') {
         navItems[1].classList.add('active');
-        navItems[4].classList.add('active');
-        console.log('active: about')
+        navItems[5].classList.add('active');
     } else if (splitUrl[splitUrl.length - 1] === 'contact.html') {
         navItems[2].classList.add('active');
-        navItems[5].classList.add('active');
-        console.log('active: contact')
+    }  else if (splitUrl[splitUrl.length - 1] === 'projects.html') {
+        navItems[3].classList.add('active');
+        navItems[7].classList.add('active');
+        console.log('active: projects')
     }
+    
 })
