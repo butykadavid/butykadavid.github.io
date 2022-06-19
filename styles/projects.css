@@ -21,16 +21,23 @@ body::-webkit-scrollbar{
     background: white;
 }
 
+.project-1{
+    margin-top: 10vh;
+
+    background: linear-gradient( rgba(46, 255, 155, 0.5), rgba(0, 239, 210, 0.5) ), url("../img/Fantasy_3.jpg");
+}
+
+.project-2{
+    background: url("../img/space.jpg");
+}
+
 .project{
     width: 100vw;
     height: 50vh;
-    background: linear-gradient( rgba(46, 255, 155, 0.5), rgba(0, 239, 210, 0.5) ), url("../img/Fantasy_3.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-size: 100%;
-
-    margin-top: 10vh;
 
     text-decoration: none;
     color: #252525;
