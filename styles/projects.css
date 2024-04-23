@@ -21,6 +21,10 @@ body::-webkit-scrollbar{
     background: white;
 }
 
+.in-progress {
+    filter: grayscale(100%);
+}
+
 .project-1{
     margin-top: 10vh;
 
@@ -28,7 +32,7 @@ body::-webkit-scrollbar{
 }
 
 .project-2{
-    background: url("../img/space.jpg");
+    background: url("../img/gn_bg.jpg");
 }
 
 .project{
@@ -40,7 +44,7 @@ body::-webkit-scrollbar{
     background-size: 100%;
 
     text-decoration: none;
-    color: #252525;
+    color: #d5d5d5;
 
     display: flex;
     flex-direction: column;
@@ -55,14 +59,20 @@ body::-webkit-scrollbar{
 }
 
 .project h1{
-    font-size: 7vh;
     margin: 0;
+    padding: 0.1rem 3rem 0rem 3rem;
+    background: #252525;
+    
+    font-size: 7vh;
 }
 
 .project p, .project a {
+    margin: 10px;
+    padding: 0.1rem 3rem 0rem 3rem;
+    
+    background: #252525;
+    
     font-size: 3vh;
-
-    margin: 0px 10px;
 }
 
 .dots{
