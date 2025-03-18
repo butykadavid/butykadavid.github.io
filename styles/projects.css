@@ -35,6 +35,10 @@ body::-webkit-scrollbar{
     background: url("../img/gn_bg.jpg");
 }
 
+.project-3 {
+    background: url("../img/wf_bg.jpg");
+}
+
 .project{
     width: 100vw;
     height: 50vh;
@@ -102,7 +106,7 @@ body::-webkit-scrollbar{
         max-width: 80vw;
         height: auto;
 
-        margin-top: 20vh;
+        margin-top: 10vh;
         padding: 10px 0px;
 
         background: #252525;
