@@ -1,13 +1,14 @@
-html, body{
+html,
+body {
     height: auto;
     overflow-y: auto;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
 
-.main__container{
+.main__container {
     background: #F2EFED;
 
     flex-direction: column;
@@ -15,7 +16,7 @@ body::-webkit-scrollbar{
     height: auto;
 }
 
-.navig{
+.navig {
     position: fixed;
 
     background: white;
@@ -25,21 +26,21 @@ body::-webkit-scrollbar{
     filter: grayscale(100%);
 }
 
-.project-1{
+.project-1 {
     margin-top: 10vh;
 
-    background: linear-gradient( rgba(46, 255, 155, 0.5), rgba(0, 239, 210, 0.5) ), url("../img/Fantasy_3.jpg");
+    background: linear-gradient(rgba(46, 255, 155, 0.5), rgba(0, 239, 210, 0.5)), url("../img/Fantasy_3.jpg");
 }
 
-.project-2{
+.project-2 {
     background: url("../img/gn_bg.jpg");
 }
 
 .project-3 {
-    background: url("../img/wf_bg.jpg");
+    background: linear-gradient(rgba(255, 17, 69, 0.5), rgba(255, 17, 69, 0.5)), url("../img/wf_bg.png");
 }
 
-.project{
+.project {
     width: 100vw;
     height: 50vh;
     background-size: cover;
@@ -58,28 +59,29 @@ body::-webkit-scrollbar{
     transition: 0.4s background ease-in-out;
 }
 
-.project:hover{
+.project:hover {
     background-size: 120%;
 }
 
-.project h1{
+.project h1 {
     margin: 0;
     padding: 0.1rem 3rem 0rem 3rem;
     background: #252525;
-    
+
     font-size: 7vh;
 }
 
-.project p, .project a {
+.project p,
+.project a {
     margin: 10px;
     padding: 0.1rem 3rem 0rem 3rem;
-    
+
     background: #252525;
-    
+
     font-size: 3vh;
 }
 
-.dots{
+.dots {
     margin: 20vh 0vh;
     text-align: center;
     font-size: 10vh;
@@ -87,10 +89,10 @@ body::-webkit-scrollbar{
 
 @media (max-width: 1000px) {
 
-    .sm{
+    .sm {
         overflow-y: auto;
     }
-    
+
     .main__container {
         width: 100vw;
         height: auto;
@@ -102,7 +104,7 @@ body::-webkit-scrollbar{
         align-items: center;
     }
 
-    .project{
+    .project {
         max-width: 80vw;
         height: auto;
 
@@ -119,7 +121,7 @@ body::-webkit-scrollbar{
         font-size: 6vh;
     }
 
-    .project img{
+    .project img {
         max-width: 100%;
     }
 
@@ -130,12 +132,12 @@ body::-webkit-scrollbar{
         text-decoration: underline;
     }
 
-    .dots{
+    .dots {
         margin: 10vh 0vh;
         font-size: 10vh;
     }
 
-    .footer{
+    .footer {
         position: fixed;
         bottom: 0;
     }
