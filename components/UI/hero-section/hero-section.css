@@ -1,0 +1,28 @@
+hero-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero__container {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px 0;
+}
+
+.hero__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero__container h1,
+.hero__container p {
+    margin: 0;
+}

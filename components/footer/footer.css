@@ -1,0 +1,70 @@
+.footer {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.footer .left {
+    margin-left: 2vw;
+    width: 48vw;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer .left p {
+    color: black;
+    opacity: 0.5;
+    font-family: 'Oswald';
+}
+
+.footer .right {
+    margin-right: 2vw;
+    width: 48vw;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer .right a {
+    height: 1.5vw;
+    opacity: 0.5;
+    transition: 0.35s;
+    margin-right: 25px;
+}
+
+.footer .right a:hover {
+    opacity: 0.75;
+}
+
+.footer .right a:last-child {
+    margin-right: 0px;
+}
+
+.footer .right a img {
+    height: 1.5vw;
+}
+
+@media (max-width: 1024px) {
+    .footer {
+        width: 100vw;
+        height: 10vh;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer a {
+        height: 3vh;
+    }
+
+    .footer a img {
+        height: 3vh;
+        margin: 0px 15px;
+        opacity: 0.75;
+    }
+}

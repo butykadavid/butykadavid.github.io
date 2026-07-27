@@ -1,0 +1,39 @@
+project-tree {
+    width: 25%;
+    overflow-y: auto;
+}
+
+.project-tree__container {
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .project-node__container {
+        font-size: small;
+    }
+}
+
+@media (max-width: 768px) {
+    project-tree {
+        display: none;
+
+        position: absolute;
+        top: 45px;
+        left: 0;
+
+        width: 100%;
+        max-height: 50vh;
+
+        border: 1px solid #252525;
+        background: #f2efed;
+        z-index: 10;
+    }
+
+    project-tree.open {
+        display: block;
+    }
+
+    .project-node__container {
+        font-size: medium;
+    }
+}

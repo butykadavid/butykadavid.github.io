@@ -1,0 +1,21 @@
+.project-node__container {
+    padding: 3px 10px 0px 10px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+
+.project-node__container:hover {
+    opacity: 0.45;
+    color: #fefefe;
+    background: #252525;
+}
+
+.folder {
+    color: #656565;
+}
+
+.selected {
+    color: #fefefe;
+    background: #252525;
+}

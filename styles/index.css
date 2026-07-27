@@ -1,9 +1,4 @@
 @font-face {
-    font-family: 'Ignite';
-    src: url('../font/Ignite.otf');
-}
-
-@font-face {
     font-family: 'Oswald';
     src: url('../font/Oswald.ttf');
 }
@@ -13,24 +8,72 @@
     src: url('../font/Teko.ttf');
 }
 
-@font-face {
-    font-family: 'ImperialScript';
-    src: url('../font/ImperialScript.ttf');
+* {
+    box-sizing: border-box;
+}
+
+/* Chromium, Edge, Safari */
+*::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #252525;
+    transition: background 0.2s ease;
+    cursor: pointer;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: rgba(25, 25, 25, 0.65);
+}
+
+*::-webkit-scrollbar-corner {
+    background: #252525;
 }
 
 html {
     overflow: hidden;
-    height: 100%;
+    height: 100vh;
 }
 
 body {
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
     margin: 0px;
-    background: white;
+    background: #f2efed;
     color: #252525;
     font-family: 'Teko';
+}
+
+navigation-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+portfolio-app {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+portfolio-footer {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
 }
 
 .lg {
@@ -40,331 +83,50 @@ body {
 .sm {
     display: none;
     height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-.main__container {
-    display: flex;
-    width: 100vw;
-    height: 90vh;
-    position: relative;
-}
-
-.navig {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 10vh;
-    width: 100vw;
-    background: transparent;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-family: 'Oswald';
-}
-
-.navig .navig__logo {
-    margin: 0px 25px;
-    font-size: 48px;
-    font-weight: 700;
-}
-
-.navig .navig__item {
-    margin: 0px 25px;
-    color: #252525;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 3px 10px;
-    box-shadow: inset 0 0 0 0 #252525;
-    transition: 0.5s ease-in-out;
-}
-
-.navig__item:hover {
-    color: white;
-    box-shadow: inset 200px 0 0 0 #252525;
-}
-
-.navig .active {
-    color: white;
-    box-shadow: inset 200px 0 0 0 #252525;
-}
-
-.main__container .left {
-    width: 50vw;
-    height: 90vh;
-    background: #F2EFED;
-    display: flex;
-    align-items: center;
-}
-
-.main__container .left .left__line {
-    width: 4vw;
-    height: 80vh;
-    margin-top: 10vh;
-    position: relative;
-}
-
-.main__container .left .left__line .line {
-    width: 2px;
-    height: 60vh;
-    margin-top: 10vh;
-    position: absolute;
-    left: 50%;
-    background: #252525;
-}
-
-.main__container .left .left__1 {
-    width: 23vw;
-    height: 80vh;
-    margin-top: 10vh;
-}
-
-.main__container .left .left__1 .left__1__content {
-    margin-top: 10vh;
     width: 100%;
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.left__1__content h1 {
-    font-size: 25vh;
-    font-weight: 100;
-    transform: rotate(-90deg);
-}
-
-.main__container .left .left__2 {
-    width: 23vw;
-    height: 80vh;
-    margin-top: 10vh;
-}
-
-.main__container .left .left__2 .left__2__content {
-    margin-top: 10vh;
-    width: 100%;
-    height: 60vh;
-    background: #252525;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.left__2__content h2 {
-    font-weight: 100;
-    line-height: 5vh;
-    color: white;
-    margin: 0px 20px;
-    margin-bottom: 50px;
-    font-size: 6vh;
-    border-bottom: white solid 1px;
-}
-
-.left__2__content p {
-    font-weight: 100;
-    color: #d3d3d3;
-    margin: 0px 20px;
-}
-
-.main__container .right {
-    width: 50vw;
-    height: 90vh;
-    background-image: url("../img/butyka.jpg");
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(100%);
-}
-
-.footer {
+#view {
     width: 100vw;
-    height: 10vh;
-    display: flex;
-    align-items: center;
+    min-height: 90vh;
+    overflow-y: auto;
 }
 
-.footer .left {
-    margin-left: 2vw;
-    width: 48vw;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+h1 {
+    font-size: 10vh;
+    line-height: 10vh;
+    margin-bottom: 0;
 }
 
-.footer .left p {
-    color: black;
-    opacity: 0.5;
-    font-family: 'Oswald';
+p {
+    font-size: 2.5vh;
+    line-height: 2.5vh;
+    text-align: justify;
 }
 
-.footer .right {
-    margin-right: 2vw;
-    width: 48vw;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.footer .right a {
-    height: 1.5vw;
-    opacity: 0.5;
-    transition: 0.35s;
-    margin-right: 25px;
-}
-
-.footer .right a:hover {
-    opacity: 0.75;
-}
-
-.footer .right a:last-child {
-    margin-right: 0px;
-}
-
-.footer .right a img {
-    height: 1.5vw;
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     .lg {
         display: none;
     }
+
     .sm {
         display: block;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
     }
-    .navig {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 10%;
-        width: 100vw;
-        background: transparent;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Oswald';
-        z-index: 3;
-    }
-    .navig .navig__item {
-        width: 20vw;
-        padding: 0px;
-        display: flex;
-        justify-content: center;
-    }
-    .main__container {
-        width: 100vw;
-        height: 90%;
-        padding-top: 15%;
-        background: #F2EFED;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .top__line {
-        width: 100vw;
-        height: 5%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .top__line .line {
-        width: 80vw;
-        height: 2px;
-        background: #252525;
-    }
-    .title {
-        width: 100vw;
-        height: 15%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .title h1 {
-        font-size: 15vh;
-        font-weight: 100;
-        margin: 0px;
-    }
-    .center__content {
-        width: 100vw;
-        height: 70%;
-        position: relative;
-    }
-    .center__content .center__img {
-        height: 50vh;
-        width: 50vh;
-        position: absolute;
-        top: 0;
-        left: 5vw;
-        background: url('../img/butyka.jpg');
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        filter: grayscale(100%);
-    }
-    .center__content .center__textbox {
-        position: absolute;
-        bottom: 3%;
-        right: 5vw;
-        width: 20vh;
-        height: fit-content;
-        background: #252525;
-        color: white;
-        box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.5);
-    }
-    .center__content .center__textbox h2 {
-        font-size: 2.75vh;
-        font-weight: 500;
-        line-height: 2.75vh;
-        border-bottom: white solid 2px;
-        margin: 10px;
-    }
-    .center__content .center__textbox p {
-        font-size: 2vh;
-        line-height: 2vh;
-        color: #d3d3d3;
-        text-align: justify;
-        margin: 10px 10px;
-    }
-    .footer {
-        width: 100vw;
-        height: 8%;
-        position: absolute;
-        bottom: 0;
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer a {
-        height: 3vh;
-    }
-    .footer a img {
-        height: 3vh;
-        margin: 0px 15px;
-        opacity: 0.75;
+
+    h1 {
+        font-size: 7vh;
+        line-height: 7vh;
     }
 }
 
-@media (max-width: 500px){
-    .center__content .center__img {
-        height: 40vh;
-        width: 40vh;
+@media (max-width: 768px) {
+    h1 {
+        font-size: 6vh;
+        line-height: 6vh;
     }
-    .navig .navig__item {
-        width: 30vw;
 
-        padding: 0px 5px;
-
-        margin: 0 15px;
-        
-        font-size: 1.8vh;
+    p {
+        font-size: 3vh;
+        line-height: 3vh;
     }
 }

@@ -1,0 +1,15 @@
+.projects__contaier {
+    width: 80%;
+    min-height: 80vh;
+    padding: 10vh 0 0 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .projects__contaier {
+        justify-content: flex-start;
+    }
+}

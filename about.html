@@ -7,11 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/about/about-page.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <script src="scripts/setActive.js"></script>
+    <script src="./scripts/about/about-page.js"></script>
 
     <title>Dávid Butyka | About</title>
 
@@ -19,37 +18,109 @@
 
 <body>
 
-    <div class="lg">
+    <portfolio-app>
+        <div class="lg">
+            <div class="section__container">
 
-        <div class="navig">
+                <div class="section section__1">
 
-            <a class="navig__logo">D</a>
-            <a class="navig__item" href="index.html">Home</a>
-            <a class="navig__item" href="about.html">About</a>
-            <a class="navig__item" href="contact.html">Contact</a>
-            <a class="navig__item" href="projects.html">Projects</a>
+                    <h2>Who is "DVDBTYK"?</h2>
+                    <p class="section__focus">I am Dávid Butyka, a software developer from Hungary.
+                        I studied programming both at university and on my own, and I'm currently working as a
+                        full-stack
+                        software engineer at a large international company. My go-to tools are React (and React-based
+                        libraries like Next.js) and .NET C#.
+                    </p>
+                    <p>Over the years, I've worked on several passion projects and contributed to open-source game mod
+                        development. </p>
+                    <p>Looking ahead, I'm excited to create my own mods for Trackmania as well!</p>
+                </div>
 
+                <div class="section__connect">
+
+                    <div class="section section__2">
+                        <h2>Mindset</h2>
+                        <p>Do you know those people who always complain how bad everything is,
+                            while they do nothing to move forward? You know, like the ones who still watch reality
+                            shows.
+                            Or the ones fighting in the comment sections.
+                        </p>
+                        <p>Well, I am not like them and of course those guys will never be so cool to have a website, so
+                            you
+                            might already suspect you are in a good place! :D
+                        </p>
+                        <p>I prefer moving forward and keep things simple instead of always creating fake drama for
+                            myself.
+                            I never give up, I keep my head down and work humbly until I reached my current goals.
+                            I assume being mentaly and also phisically balanced and healthy is a key to success.
+                        </p>
+                        <p>
+                            Learn. Hit the gym. Eat well. Learn once again. Socialize.
+                        </p>
+                    </div>
+
+                    <div class="section section__3">
+
+                        <h2>Why programming?</h2>
+                        <p>My passion for coding came when I was 14.
+                            I had to decide what I wanted to do with my life, in order to be able to choose the most
+                            suitable
+                            secondary school.
+                            Honestly I just googled "best jobs" and then I saw a lot of IT related things on the list.
+                            I really liked playing games on the computer so I was like: "Oh, so if I choose something
+                            like
+                            this,
+                            it is gonna be a great excuse to sit even more in front of screens."
+                        </p>
+                        <p>So that's the big story!
+                            Jokes aside, it wasn't such an irresponsible decision of course, and I am still satisfied
+                            with
+                            my choice.
+                        </p>
+                        <p>It turned out to be a great decision after all.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
         </div>
 
-        <div class="section__container">
-
-            <div class="section section__1">
-
-                <h2>Who is "DVDBTYK"?</h2>
-                <p class="section__focus">I am Dávid Butyka, a software developer from Hungary.
-                    I studied programming both at university and on my own, and I'm currently working as a full-stack
-                    software engineer at a large international company. My go-to tools are React (and React-based
-                    libraries like Next.js) and .NET C#.
-                </p>
-                <p>Over the years, I've worked on several passion projects and contributed to open-source game mod
-                    development. </p>
-                <p>Looking ahead, I'm excited to create my own mods for Trackmania as well!</p>
+        <div class="sm">
+            <div class="page__title__container">
+                <div class="page__title">
+                    <h3 class="page__title__text">Introduction</h3>
+                </div>
             </div>
 
-            <div class="section__connect">
+            <div class="page first__page anim__in" id="page">
 
-                <div class="section section__2">
-                    <h2>Mindset</h2>
+                <div class="page__content">
+
+                    <h1 class="content__title">Who is "DVDBTYK"?</h1>
+                    <p>I am Dávid Butyka, a software developer from Hungary.
+                        I studied programming both at university and on my own, and I'm currently working as a
+                        full-stack
+                        software engineer at a large international company. My go-to tools are React (and React-based
+                        libraries like Next.js) and .NET C#.
+                    </p>
+                    <p>Over the years, I've worked on several passion projects and contributed to open-source game mod
+                        development.</p>
+                    <p>Looking ahead, I'm excited to create my own mods for Trackmania as well!</p>
+
+                </div>
+
+                <img class="indicator indicator__down" src="img/down-chevron.png" onclick="animControlChevron('d')">
+
+            </div>
+
+            <div class="page second__page">
+
+                <img class="indicator indicator__up" src="img/down-chevron.png" onclick="animControlChevron('u')">
+
+                <div class=" page__content">
+
+                    <h1 class="content__title">Mindset</h1>
                     <p>Do you know those people who always complain how bad everything is,
                         while they do nothing to move forward? You know, like the ones who still watch reality shows.
                         Or the ones fighting in the comment sections.
@@ -58,17 +129,26 @@
                         might already suspect you are in a good place! :D
                     </p>
                     <p>I prefer moving forward and keep things simple instead of always creating fake drama for myself.
-                        I never give up, I keep my head down and work humbly until I reached my current goals.
+                        I never give up, I keep my head down and work humbly until I reached my goals.
                         I assume being mentaly and also phisically balanced and healthy is a key to success.
                     </p>
                     <p>
                         Learn. Hit the gym. Eat well. Learn once again. Socialize.
                     </p>
+
                 </div>
 
-                <div class="section section__3">
+                <img class="indicator indicator__down" src="img/down-chevron.png" onclick="animControlChevron('d')">
 
-                    <h2>Why programming?</h2>
+            </div>
+
+            <div class="page third__page">
+
+                <img class="indicator indicator__up" src="img/down-chevron.png" onclick="animControlChevron('u')">
+
+                <div class="page__content">
+
+                    <h1 class="content__title">Why coding?</h1>
                     <p>My passion for coding came when I was 14.
                         I had to decide what I wanted to do with my life, in order to be able to choose the most
                         suitable
@@ -88,134 +168,10 @@
                 </div>
 
             </div>
-
         </div>
+    </portfolio-app>
 
-        <div class="footer">
-            <div class="left">
-                <p>Dávid Butyka - 2025 - 1.0</p>
-            </div>
-            <div class="right">
-                <a href="https://www.instagram.com/_btykdvd_" target="_blank"><img src="img/instagram.png"></a>
-                <a href="https://www.facebook.com/david.butyka" target="_blank"><img src="img/facebook.png"></a>
-                <a href="https://www.linkedin.com/in/d%C3%A1vid-butyka-565a7a236" target="_blank"><img
-                        src="img/linkedin.png"></a>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="sm">
-
-        <div class="navig">
-
-            <a class="navig__item" href="index.html">Home</a>
-            <a class="navig__item" href="about.html">About</a>
-            <a class="navig__item" href="contact.html">Contact</a>
-            <a class="navig__item" href="projects.html">Projects</a>
-
-        </div>
-
-        <div class="page__title__container">
-
-            <div class="page__title">
-
-                <h3 class="page__title__text">Introduction</h3>
-
-            </div>
-
-        </div>
-
-
-        <div class="page first__page anim__in" id="page">
-
-            <div class="page__content">
-
-                <h1 class="content__title">Who is "DVDBTYK"?</h1>
-                <p>I am Dávid Butyka, a software developer from Hungary.
-                    I studied programming both at university and on my own, and I'm currently working as a full-stack
-                    software engineer at a large international company. My go-to tools are React (and React-based
-                    libraries like Next.js) and .NET C#.
-                </p>
-                <p>Over the years, I've worked on several passion projects and contributed to open-source game mod
-                    development.</p> 
-                <p>Looking ahead, I'm excited to create my own mods for Trackmania as well!</p>
-
-            </div>
-
-            <img class="indicator indicator__down" src="img/down-chevron.png" onclick="animControlChevron('d')">
-
-        </div>
-
-        <div class="page second__page">
-
-            <img class="indicator indicator__up" src="img/down-chevron.png" onclick="animControlChevron('u')">
-
-            <div class="page__content">
-
-                <h1 class="content__title">Mindset</h1>
-                <p>Do you know those people who always complain how bad everything is,
-                    while they do nothing to move forward? You know, like the ones who still watch reality shows.
-                    Or the ones fighting in the comment sections.
-                </p>
-                <p>Well, I am not like them and of course those guys will never be so cool to have a website, so you
-                    might already suspect you are in a good place! :D
-                </p>
-                <p>I prefer moving forward and keep things simple instead of always creating fake drama for myself.
-                    I never give up, I keep my head down and work humbly until I reached my goals.
-                    I assume being mentaly and also phisically balanced and healthy is a key to success.
-                </p>
-                <p>
-                    Learn. Hit the gym. Eat well. Learn once again. Socialize.
-                </p>
-
-            </div>
-
-            <img class="indicator indicator__down" src="img/down-chevron.png" onclick="animControlChevron('d')">
-
-        </div>
-
-        <div class="page third__page">
-
-            <img class="indicator indicator__up" src="img/down-chevron.png" onclick="animControlChevron('u')">
-
-            <div class="page__content">
-
-                <h1 class="content__title">Why coding?</h1>
-                <p>My passion for coding came when I was 14.
-                    I had to decide what I wanted to do with my life, in order to be able to choose the most
-                    suitable
-                    secondary school.
-                    Honestly I just googled "best jobs" and then I saw a lot of IT related things on the list.
-                    I really liked playing games on the computer so I was like: "Oh, so if I choose something
-                    like
-                    this,
-                    it is gonna be a great excuse to sit even more in front of screens."
-                </p>
-                <p>So that's the big story!
-                    Jokes aside, it wasn't such an irresponsible decision of course, and I am still satisfied with
-                    my choice.
-                </p>
-                <p>It turned out to be a great decision after all.</p>
-
-            </div>
-
-        </div>
-
-        <div class="footer">
-
-            <a href="https://www.instagram.com/_btykdvd_" target="_blank"><img src="img/instagram.png"
-                    alt="Instagram icon"></a>
-            <a href="https://www.facebook.com/david.butyka" target="_blank"><img src="img/facebook.png"
-                    alt="Facebook icon"></a>
-            <a href="https://www.linkedin.com/in/d%C3%A1vid-butyka-565a7a236" target="_blank"><img
-                    src="img/linkedin.png" alt="LinkedIn icon"></a>
-
-        </div>
-
-    </div>
-
-    <script src="scripts/scrollAnim.js"></script>
+    <script type="module" src="app.js"></script>
 
 </body>
 

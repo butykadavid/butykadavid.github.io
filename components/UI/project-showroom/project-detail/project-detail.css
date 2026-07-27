@@ -1,0 +1,29 @@
+project-detail {
+    width: 75%;
+    overflow-y: auto;
+}
+
+.project-detail__container {
+    width: 100%;
+    min-height: 100%;
+    padding: 25px;
+}
+
+.project-detail__container p {
+    font-size: large;
+}
+
+.project-detail__container span {
+    font-size: small;
+    margin-right: 3px;
+}
+
+@media (max-width: 768px) {
+    project-detail {
+        width: 100%;
+    }
+
+    .project-detail__container {
+        padding: 0px 0px 25px 0px;
+    }
+}

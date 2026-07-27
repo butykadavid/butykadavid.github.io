@@ -1,0 +1,47 @@
+.project-showroom__container {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    project-showroom {
+        height: auto !important;
+    }
+
+    .project-showroom__container {
+        height: auto !important;
+        flex-direction: column;
+    }
+}
+
+.project-tree-toggle {
+    display: none;
+    font-family: 'Oswald';
+}
+
+
+@media(max-width:768px) {
+    .project-showroom__container {
+        position: relative;
+    }
+
+    .project-tree-toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        padding: 12px;
+
+        background: none;
+        border: 1px solid #252525;
+
+        cursor: pointer;
+    }
+
+    project-detail {
+        display: block;
+    }
+
+}
