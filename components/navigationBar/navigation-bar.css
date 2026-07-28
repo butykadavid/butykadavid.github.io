@@ -4,7 +4,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background: #F2EFED;
+    background: var(--main-color-1);
     font-family: 'Oswald';
 }
 
@@ -16,23 +16,23 @@
 
 .navig .navig__item {
     margin: 0px 25px;
-    color: #252525;
+    color: var(--main-color-2);
     text-transform: uppercase;
     text-decoration: none;
     padding: 3px 10px;
-    box-shadow: inset 0 0 0 0 #252525;
+    box-shadow: inset 0 0 0 0 var(--main-color-2);
     cursor: pointer;
     transition: 0.5s ease-in-out;
 }
 
 .navig__item:hover {
-    color: white;
-    box-shadow: inset 200px 0 0 0 #252525;
+    color: var(--accent-color-1);
+    box-shadow: inset 200px 0 0 0 var(--main-color-2);
 }
 
 .navig .active {
-    color: white;
-    box-shadow: inset 200px 0 0 0 #252525;
+    color: var(--accent-color-1);
+    box-shadow: inset 200px 0 0 0 var(--main-color-2);
 }
 
 @media (max-width: 1280px) {
@@ -44,7 +44,7 @@
 
 @media (max-width: 1024px) {
     .navig {
-        background: #F2EFED;
+        background: var(--main-color-1);
         justify-content: center;
         font-family: 'Oswald';
         z-index: 3;

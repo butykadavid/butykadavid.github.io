@@ -7,15 +7,15 @@
 
 .project-node__container:hover {
     opacity: 0.45;
-    color: #fefefe;
-    background: #252525;
+    color: var(--accent-color-1);
+    background: var(--main-color-2);
 }
 
 .folder {
-    color: #656565;
+    color: var(--accent-color-2);
 }
 
 .selected {
-    color: #fefefe;
-    background: #252525;
+    color: var(--accent-color-1);
+    background: var(--main-color-2);
 }

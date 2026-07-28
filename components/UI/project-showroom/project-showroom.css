@@ -35,7 +35,7 @@
         padding: 12px;
 
         background: none;
-        border: 1px solid #252525;
+        border: 1px solid var(--main-color-2);
 
         cursor: pointer;
     }

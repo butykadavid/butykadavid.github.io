@@ -4,7 +4,7 @@
     padding-top: 10vh;
     display: flex;
     align-items: center;
-    background: #f2efed;
+    background: var(--main-color-1);
 }
 
 .content__1 {
@@ -28,7 +28,7 @@
 
 .content__1 p {
     margin: 10px 0px;
-    color: #252525;
+    color: var(--main-color-2);
 }
 
 .content__2 {
@@ -60,7 +60,7 @@ form div {
 
 form .message {
     background-color: transparent;
-    border: 2px solid #252525;
+    border: 2px solid var(--main-color-2);
     padding: 4px 8px;
     outline: none;
     resize: none;
@@ -78,9 +78,9 @@ form .message:focus {
 
 form button {
     width: 100%;
-    background-color: #252525;
+    background-color: var(--main-color-2);
     border-style: solid;
-    color: #fefefe;
+    color: var(--accent-color-1);
     border: 2px solid 252525;
     transition: 0.25s ease-in-out;
     font-family: 'Oswald';
@@ -90,7 +90,7 @@ form button {
 
 form button:first-child {
     background-color: transparent;
-    color: #252525;
+    color: var(--main-color-2);
     border: 2px solid 252525;
     transition: 0.25s ease-in-out;
     font-family: 'Oswald';

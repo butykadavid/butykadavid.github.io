@@ -1,11 +1,19 @@
+:root{
+    --main-color-1: #f2efed;
+    --main-color-2: #252525;
+    --accent-color-1: #fefefe; /* Basically serves as --text-color-1 too */
+    --accent-color-2: #656565;
+    --text-color-2: #d3d3d3; 
+}
+
 @font-face {
     font-family: 'Oswald';
-    src: url('../font/Oswald.ttf');
+    src: url('stash/common-stuff/Oswald.ttf');
 }
 
 @font-face {
     font-family: 'Teko';
-    src: url('../font/Teko.ttf');
+    src: url('stash/common-stuff/Teko.ttf');
 }
 
 * {
@@ -23,7 +31,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-    background: #252525;
+    background: var(--main-color-2);
     transition: background 0.2s ease;
     cursor: pointer;
 }
@@ -33,7 +41,7 @@
 }
 
 *::-webkit-scrollbar-corner {
-    background: #252525;
+    background: var(--main-color-2);
 }
 
 html {
@@ -46,8 +54,8 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0px;
-    background: #f2efed;
-    color: #252525;
+    background: var(--main-color-1);
+    color: var(--main-color-2);
     font-family: 'Teko';
 }
 

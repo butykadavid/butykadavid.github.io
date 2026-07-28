@@ -1,20 +1,15 @@
-@font-face {
-    font-family: 'Oswald';
-    src: url('../font/Oswald.ttf');
-}
-
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    background: #F2EFED;
+    background: var(--main-color-1);
 }
 
 .thankyou-1 {
     display: flex;
     justify-content: center;
-    color: #252525;
+    color: var(--main-color-2);
     margin-top: 30vh;
     font-family: 'Oswald';
 }
@@ -34,15 +29,15 @@ body {
 
 .thankyou-2 a {
     text-decoration: none;
-    color: #252525;
+    color: var(--main-color-2);
     font-size: 3vh;
     margin: 2vw;
     padding: 3px 10px;
-    box-shadow: inset 0 0 0 0 #252525;
+    box-shadow: inset 0 0 0 0 var(--main-color-2);
     transition: 0.5s ease-in-out;
 }
 
 .thankyou-2 a:hover {
-    color: white;
-    box-shadow: inset 250px 0 0 0 #252525;
+    color: var(--accent-color-1);
+    box-shadow: inset 250px 0 0 0 var(--main-color-2);
 }

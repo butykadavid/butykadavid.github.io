@@ -6,7 +6,7 @@ export class PortfolioFooter extends HTMLElement {
 
         const css = await fetch("./components/footer/footer.css")
             .then(r => r.text());
-
+        
         this.render(year, version, css);
     }
 
@@ -22,15 +22,15 @@ export class PortfolioFooter extends HTMLElement {
 
                             <div class="right">
                                 <a href="https://www.instagram.com/_btykdvd_" target="_blank">
-                                    <img src="img/instagram.png">
+                                    <img src="/components/footer/instagram.png">
                                 </a>
 
                                 <a href="https://www.facebook.com/david.butyka" target="_blank">
-                                    <img src="img/facebook.png">
+                                    <img src="/components/footer/facebook.png">
                                 </a>
 
                                 <a href="https://www.linkedin.com/in/d%C3%A1vid-butyka-565a7a236" target="_blank">
-                                    <img src="img/linkedin.png">
+                                    <img src="/components/footer/linkedin.png">
                                 </a>
                             </div>
                         </div>
@@ -39,15 +39,15 @@ export class PortfolioFooter extends HTMLElement {
                     <div class="sm">
                         <div class="footer">
                             <a href="https://www.instagram.com/_btykdvd_" target="_blank">
-                                <img src="img/instagram.png">
+                                <img src="/components/footer/instagram.png">
                             </a>
 
                             <a href="https://www.facebook.com/david.butyka" target="_blank">
-                                <img src="img/facebook.png">
+                                <img src="/components/footer/facebook.png">
                             </a>
 
                             <a href="https://www.linkedin.com/in/d%C3%A1vid-butyka-565a7a236" target="_blank">
-                                <img src="img/linkedin.png">
+                                <img src="/components/footer/linkedin.png">
                             </a>
                         </div>
                     </div>

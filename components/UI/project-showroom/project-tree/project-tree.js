@@ -1,4 +1,4 @@
-import { data } from "../../../../data/projects/data.js";
+import { data } from "../../../../data/projects/metadata.js";
 
 export class ProjectTree extends HTMLElement {
     flatTree = [];
