@@ -73,7 +73,7 @@ export const data = {
               "name": "Motorsport Manager CMD Game",
               "type": "experiment",
               "description": "A command-line motorsport management game prototype.",
-              "conent": "motorsportcmd.md",
+              "content": "motorsportcmd.md",
               "tags": ["csharp", "console"]
             },
             {

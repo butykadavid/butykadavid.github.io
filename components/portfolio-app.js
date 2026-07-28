@@ -16,11 +16,7 @@ export class PortfolioApp extends HTMLElement {
     render(children) {
         this.innerHTML = `
             <navigation-bar></navigation-bar>
-            
-            <main id="view">
-                ${children}
-            </main>
-
+            <main id="view">${children}</main>
             <portfolio-footer year="2026" version="2.0"></portfolio-footer>
         `;
     }

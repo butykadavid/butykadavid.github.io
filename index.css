@@ -54,19 +54,9 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0px;
-    background: var(--main-color-1);
+    background: var(--accent-color-1);
     color: var(--main-color-2);
     font-family: 'Teko';
-}
-
-navigation-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 10vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
 }
 
 portfolio-app {
@@ -75,13 +65,6 @@ portfolio-app {
     width: 100vw;
     overflow-y: auto;
     overflow-x: hidden;
-}
-
-portfolio-footer {
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    align-items: center;
 }
 
 .lg {
@@ -98,6 +81,7 @@ portfolio-footer {
     width: 100vw;
     min-height: 90vh;
     overflow-y: auto;
+    background: var(--main-color-1);
 }
 
 h1 {

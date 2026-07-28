@@ -1,3 +1,10 @@
+portfolio-footer {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
 .footer {
     width: 100vw;
     height: 10vh;
@@ -50,12 +57,8 @@
 
 @media (max-width: 1024px) {
     .footer {
-        width: 100vw;
-        height: 10vh;
         background-color: var(--accent-color-1);
-        display: flex;
         justify-content: center;
-        align-items: center;
     }
 
     .footer a {
