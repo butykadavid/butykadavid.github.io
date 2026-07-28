@@ -2,14 +2,14 @@ navigation-bar {
     position: absolute;
     top: 0;
     left: 0;
-    height: 10vh;
+    height: 10dvh;
     width: 100vw;
     display: flex;
     align-items: center;
 }
 
 .navig {
-    height: 10vh;
+    height: 10dvh;
     width: 100vw;
     display: flex;
     justify-content: flex-start;
@@ -79,6 +79,6 @@ navigation-bar {
         padding: 0px 5px;
         margin: 0 15px;
 
-        font-size: 1.8vh;
+        font-size: 1.8dvh;
     }
 }

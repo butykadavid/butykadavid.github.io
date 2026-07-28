@@ -138,3 +138,9 @@ function animControlChevron(triggerElement) {
         }
     }
 }
+
+document.querySelectorAll(".indicator").forEach(button => {
+    button.addEventListener("click", () => {
+        animControlChevron(button.dataset.direction);
+    });
+});

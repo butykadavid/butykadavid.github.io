@@ -1,7 +1,7 @@
 .content__all {
     width: 100vw;
-    height: 80vh;
-    padding-top: 10vh;
+    height: 80dvh;
+    padding-top: 10dvh;
     display: flex;
     align-items: center;
     background: var(--main-color-1);
@@ -9,7 +9,7 @@
 
 .content__1 {
     width: 40vw;
-    height: 80vh;
+    height: 80dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,8 +17,8 @@
 
 .content__1 div {
     max-width: 30vw;
-    max-height: 60vh;
-    margin: 10vh 5vw;
+    max-height: 60dvh;
+    margin: 10dvh 5vw;
 }
 
 .content__1 h2 {
@@ -33,8 +33,8 @@
 
 .content__2 {
     width: 40vw;
-    height: 40vh;
-    margin: 10vh 10vw;
+    height: 40dvh;
+    margin: 10dvh 10vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +46,7 @@ form {
     flex-direction: column;
     justify-content: center;
     text-align: justify;
-    row-gap: 3vh;
+    row-gap: 3dvh;
     font-size: 1vw;
     font-family: 'Oswald';
 }
@@ -81,7 +81,7 @@ form button {
     background-color: var(--main-color-2);
     border-style: solid;
     color: var(--accent-color-1);
-    border: 2px solid 252525;
+    border: 2px solid #252525;
     transition: 0.25s ease-in-out;
     font-family: 'Oswald';
     cursor: pointer;
@@ -91,7 +91,7 @@ form button {
 form button:first-child {
     background-color: transparent;
     color: var(--main-color-2);
-    border: 2px solid 252525;
+    border: 2px solid #252525;
     transition: 0.25s ease-in-out;
     font-family: 'Oswald';
     cursor: pointer;
@@ -104,15 +104,15 @@ form button:hover {
 
 .form-text {
     min-width: 35vw;
-    margin-top: 5vh;
-    padding: 15vh;
+    margin-top: 5dvh;
+    padding: 15dvh;
     font-size: 1vw;
 }
 
 @media (max-width: 1024px) {
     form {
         width: 80%;
-        padding-bottom: 10vh;
+        padding-bottom: 10dvh;
     }
     
     .content__all {
@@ -157,8 +157,8 @@ form button:hover {
 
     .form-text {
         min-width: 35vw;
-        margin-top: 5vh;
-        padding: 15vh;
+        margin-top: 5dvh;
+        padding: 15dvh;
         font-size: 1vw;
     }
 }

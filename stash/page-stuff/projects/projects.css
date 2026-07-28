@@ -1,7 +1,7 @@
 .projects__contaier {
     width: 80%;
-    min-height: 80vh;
-    padding: 10vh 0 0 0;
+    min-height: 80dvh;
+    padding: 10dvh 0 0 0;
     margin: auto;
     display: flex;
     flex-direction: column;

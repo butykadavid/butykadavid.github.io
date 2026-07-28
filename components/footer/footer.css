@@ -1,13 +1,13 @@
 portfolio-footer {
     width: 100vw;
-    height: 10vh;
+    height: 10dvh;
     display: flex;
     align-items: center;
 }
 
 .footer {
     width: 100vw;
-    height: 10vh;
+    height: 10dvh;
     display: flex;
     align-items: center;
 }
@@ -62,11 +62,11 @@ portfolio-footer {
     }
 
     .footer a {
-        height: 3vh;
+        height: 3dvh;
     }
 
     .footer a img {
-        height: 3vh;
+        height: 3dvh;
         margin: 0px 15px;
         opacity: 0.75;
     }

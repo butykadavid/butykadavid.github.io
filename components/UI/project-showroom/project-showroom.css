@@ -18,8 +18,8 @@
 .project-tree-toggle {
     display: none;
     font-family: 'Oswald';
+    color: #252525;
 }
-
 
 @media(max-width:768px) {
     .project-showroom__container {

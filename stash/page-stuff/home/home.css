@@ -6,7 +6,7 @@
 
 .home__container .left {
     width: 50vw;
-    height: 90vh;
+    height: 90dvh;
     background: var(--main-color-1);
     display: flex;
     align-items: center;
@@ -14,23 +14,23 @@
 
 .home__container .left .left__line {
     width: 4vw;
-    height: 80vh;
-    margin-top: 10vh;
+    height: 80dvh;
+    margin-top: 10dvh;
     position: relative;
 }
 
 .home__container .left .left__line .line {
     width: 2px;
-    height: 60vh;
-    margin-top: 10vh;
+    height: 60dvh;
+    margin-top: 10dvh;
     position: absolute;
     left: 50%;
     background: var(--main-color-2);
 }
 
 .home__container .left .left__1 {
-    height: 80vh;
-    margin-top: 10vh;
+    height: 80dvh;
+    margin-top: 10dvh;
     width: 23vw;
 }
 
@@ -44,8 +44,8 @@
 }
 
 .home__container .left__1__content h1 {
-    font-size: 25vh;
-    line-height: 25vh;
+    font-size: 25dvh;
+    line-height: 25dvh;
     font-weight: 100;
     margin: auto;
     transform: rotate(-90deg);
@@ -53,14 +53,14 @@
 
 .home__container .left .left__2 {
     width: 23vw;
-    height: 80vh;
-    margin-top: 10vh;
+    height: 80dvh;
+    margin-top: 10dvh;
 }
 
 .home__container .left .left__2 .left__2__content {
-    margin-top: 10vh;
+    margin-top: 10dvh;
     width: 100%;
-    height: 60vh;
+    height: 60dvh;
     background: var(--main-color-2);
     display: flex;
     flex-direction: column;
@@ -70,11 +70,11 @@
 
 .home__container .left__2__content h2 {
     font-weight: 100;
-    line-height: 5vh;
+    line-height: 5dvh;
     color: var(--accent-color-1);
     margin: 0px 20px;
     margin-bottom: 50px;
-    font-size: 6vh;
+    font-size: 6dvh;
     border-bottom: var(--accent-color-1) solid 1px;
 }
 
@@ -86,7 +86,7 @@
 
 .home__container .right {
     width: 50vw;
-    height: 90vh;
+    height: 90dvh;
     background-image: url("./butyka.jpg");
     background-size: cover;
     background-position: center;
@@ -111,20 +111,20 @@
     }
 
     .home__container .left__1__content h1 {
-        font-size: 18vh;
-        line-height: 18vh;
+        font-size: 18dvh;
+        line-height: 18dvh;
     }
 }
 
 @media (max-width: 1024px) {
     .home .sm {
-        height: 90vh;
+        height: 90dvh;
     }
 
     .home__container {
         width: 100vw;
         height: 90%;
-        padding-top: 10vh;
+        padding-top: 10dvh;
         background: var(--main-color-1);
         display: flex;
         flex-direction: column;
@@ -155,7 +155,7 @@
     }
 
     .home__container .title h1 {
-        font-size: 15vh;
+        font-size: 15dvh;
         font-weight: 100;
         margin: 0px;
     }
@@ -167,8 +167,8 @@
     }
 
     .home__container .center__content .center__img {
-        height: 50vh;
-        width: 50vh;
+        height: 50dvh;
+        width: 50dvh;
         position: absolute;
         top: 0;
         left: 5vw;
@@ -183,7 +183,7 @@
         position: absolute;
         bottom: 3%;
         right: 5vw;
-        width: 20vh;
+        width: 20dvh;
         height: fit-content;
         background: var(--main-color-2);
         color: var(--accent-color-1);
@@ -191,16 +191,16 @@
     }
 
     .home__container .center__content .center__textbox h2 {
-        font-size: 2.75vh;
+        font-size: 2.75dvh;
         font-weight: 500;
-        line-height: 2.75vh;
+        line-height: 2.75dvh;
         border-bottom: var(--accent-color-1) solid 2px;
         margin: 10px;
     }
 
     .home__container .center__content .center__textbox p {
-        font-size: 2vh;
-        line-height: 2vh;
+        font-size: 2dvh;
+        line-height: 2dvh;
         color: var(--text-color-2);
         text-align: justify;
         margin: 10px 10px;
@@ -209,11 +209,11 @@
 
 @media (max-width: 768px) {
     .home .sm {
-        height: 90vh;
+        height: 90dvh;
     }
 
     .home__container .center__content .center__img {
-        height: 40vh;
-        width: 40vh;
+        height: 40dvh;
+        width: 40dvh;
     }
 }

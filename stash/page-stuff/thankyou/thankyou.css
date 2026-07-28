@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     color: var(--main-color-2);
-    margin-top: 30vh;
+    margin-top: 30dvh;
     font-family: 'Oswald';
 }
 
@@ -15,14 +15,14 @@
 .thankyou-2 h1 {
     text-align: center;
     text-transform: uppercase;
-    font-size: 5vh;
+    font-size: 5dvh;
     margin: 0;
 }
 
 .thankyou-2 a {
     text-decoration: none;
     color: var(--main-color-2);
-    font-size: 3vh;
+    font-size: 3dvh;
     margin: 2vw;
     padding: 3px 10px;
     box-shadow: inset 0 0 0 0 var(--main-color-2);

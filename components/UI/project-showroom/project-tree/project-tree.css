@@ -22,7 +22,7 @@ project-tree {
         left: 0;
 
         width: 100%;
-        max-height: 50vh;
+        max-height: 50dvh;
 
         border: 1px solid var(--main-color-2);
         background: var(--main-color-1);

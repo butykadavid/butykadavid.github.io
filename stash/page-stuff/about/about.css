@@ -1,7 +1,7 @@
 .section__container {
     width: 100vw;
-    height: 80vh;
-    padding-top: 10vh;
+    height: 80dvh;
+    padding-top: 10dvh;
     background: var(--main-color-1);
     display: flex;
     justify-content: flex-start;
@@ -9,7 +9,7 @@
 }
 
 .section {
-    height: 60vh;
+    height: 60dvh;
     text-align: justify;
     margin-left: 5vw;
     margin-right: 5vw;
@@ -24,27 +24,27 @@
 }
 
 .section__1 h2 {
-    font-size: 10vh;
-    line-height: 10vh;
+    font-size: 10dvh;
+    line-height: 10dvh;
     margin: 10px 0px;
     text-align: left;
 }
 
 .section__1 p {
-    font-size: 2.5vh;
-    line-height: 2.5vh;
+    font-size: 2.5dvh;
+    line-height: 2.5dvh;
     margin: 10px 0px;
     color: var(--main-color-2);
 }
 
 .section__focus {
-    font-size: 4vh;
+    font-size: 4dvh;
     font-weight: 600;
 }
 
 .section__connect {
     width: 60vw;
-    height: 90vh;
+    height: 90dvh;
     position: absolute;
     top: 0;
     right: 0;
@@ -60,16 +60,16 @@
 }
 
 .section__2 h2 {
-    font-size: 6vh;
-    line-height: 6vh;
+    font-size: 6dvh;
+    line-height: 6dvh;
     text-align: left;
     margin: 10px 0px;
     border-bottom: 2px solid var(--accent-color-1);
 }
 
 .section__2 p {
-    font-size: 2.5vh;
-    line-height: 2.5vh;
+    font-size: 2.5dvh;
+    line-height: 2.5dvh;
     margin: 10px 0px;
     color: var(--text-color-2);
 }
@@ -79,39 +79,39 @@
 }
 
 .section__3 h2 {
-    font-size: 6vh;
-    line-height: 6vh;
+    font-size: 6dvh;
+    line-height: 6dvh;
     text-align: left;
     margin: 10px 0px;
     border-bottom: 2px solid var(--accent-color-1);
 }
 
 .section__3 p {
-    font-size: 2.5vh;
-    line-height: 2.5vh;
+    font-size: 2.5dvh;
+    line-height: 2.5dvh;
     margin: 10px 0px;
     color: var(--text-color-2);
 }
 
 @media (max-width: 1150px) {
     .section__2 h2 {
-        font-size: 5vh;
-        line-height: 5vh;
+        font-size: 5dvh;
+        line-height: 5dvh;
     }
 
     .section__2 p {
-        font-size: 2vh;
-        line-height: 2vh;
+        font-size: 2dvh;
+        line-height: 2dvh;
     }
 
     .section__3 h2 {
-        font-size: 5vh;
-        line-height: 5vh;
+        font-size: 5dvh;
+        line-height: 5dvh;
     }
 
     .section__3 p {
-        font-size: 2vh;
-        line-height: 2vh;
+        font-size: 2dvh;
+        line-height: 2dvh;
     }
 }
 
@@ -163,8 +163,8 @@
     }
 
     .page__title .page__title__text {
-        letter-spacing: 2vh;
-        font-size: 3vh;
+        letter-spacing: 2dvh;
+        font-size: 3dvh;
         font-weight: 600;
         text-transform: uppercase;
         transform: rotateZ(-90deg);
@@ -174,7 +174,7 @@
     .page__content {
         width: 85vw;
         height: 70%;
-        margin: 0vh 5vw;
+        margin: 0dvh 5vw;
         padding: 2vw;
         background-color: var(--main-color-2);
         color: var(--accent-color-1);
@@ -185,14 +185,14 @@
 
     .page__content .content__title {
         margin: 0px 7px;
-        font-size: 6vh;
-        line-height: 6vh;
+        font-size: 6dvh;
+        line-height: 6dvh;
         border-bottom: 2px solid var(--accent-color-1);
     }
 
     .page__content p {
-        font-size: 3vh;
-        line-height: 3vh;
+        font-size: 3dvh;
+        line-height: 3dvh;
         text-align: justify;
         margin: 7px;
         color: var(--text-color-2);
@@ -253,18 +253,18 @@
 
 @media (max-width: 768px) {
     .page__title .page__title__text {
-        letter-spacing: 2vh;
-        font-size: 2.5vh;
+        letter-spacing: 2dvh;
+        font-size: 2.5dvh;
         font-weight: 600;
     }
 
     .page__content .content__title {
-        font-size: 5vh;
-        line-height: 5vh;
+        font-size: 5dvh;
+        line-height: 5dvh;
     }
 
     .page__content p {
-        font-size: 2.2vh;
-        line-height: 2.2vh;
+        font-size: 2.2dvh;
+        line-height: 2.2dvh;
     }
 }

@@ -26,7 +26,7 @@ export class ProjectShowroom extends HTMLElement {
             tree.classList.remove("open");
             this.treeOpen = false;
 
-            this.querySelector(".project-tree-toggle").innerHTML = `<span>${this.selectedProject.name}</span><span>⯆</span>`;
+            this.querySelector(".project-tree-toggle").innerHTML = `<span>${this.selectedProject.name}</span><span>▼</span>`;
         });
 
         const toggle = this.querySelector(".project-tree-toggle");
@@ -36,7 +36,7 @@ export class ProjectShowroom extends HTMLElement {
 
             tree.classList.toggle("open", this.treeOpen);
 
-            toggle.innerHTML = this.treeOpen ? `<span>${this.selectedProject?.name ?? "Select"}</span><span>⯅</span>` : `<span>${this.selectedProject?.name ?? "Select"}</span><span>⯆</span>`;
+            toggle.innerHTML = this.treeOpen ? `<span>${this.selectedProject?.name ?? "Select"}</span><span>▲</span>` : `<span>${this.selectedProject?.name ?? "Select"}</span><span>▼</span>`;
         });
 
     }
