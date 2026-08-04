@@ -67,6 +67,13 @@ portfolio-app {
     overflow-x: hidden;
 }
 
+blog-app .blog{
+    width: 100vw;
+    min-height: 80dvh;
+    padding: 0 10vw;
+    padding-top: 10dvh;
+}
+
 .lg {
     display: block;
 }

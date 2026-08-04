@@ -1,4 +1,4 @@
-import "./navigationBar/navigation-bar.js";
+import "./navigation-bar/navigation-bar.js";
 import "./footer/footer.js";
 
 import "./UI/hero-section/hero-section.js"

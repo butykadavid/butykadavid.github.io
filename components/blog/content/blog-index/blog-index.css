@@ -1,0 +1,27 @@
+.blog__index {
+    display: flex;
+    flex-direction: column;
+    gap: 5dvh;
+}
+
+.categories__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.categories__container p {
+    margin: 0;
+}
+
+.blog__index__categories {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+}

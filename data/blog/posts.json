@@ -1,0 +1,15 @@
+[
+    {
+        "id": "1785843822_creating_a_test_post",
+        "title": "Creating a test post",
+        "timestamp": "1785843822",
+        "description": "Exploring how frontend frameworks work by creating a simplified one from scratch. This post delves into the core  frameworks work by creating a simplifieratch. tend frameworks, including component-based architecture, state management, and rendering. By building a basic framework, we gain insights into how popular frameworks like React and Vue operate under the hood.",
+        "tags": [
+            "javascript",
+            "web-components",
+            "frontend"
+        ],
+        "category": "web-development",
+        "published": true
+    }
+]

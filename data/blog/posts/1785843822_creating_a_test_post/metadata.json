@@ -1,0 +1,13 @@
+{
+    "id": "1785843822_creating_a_test_post",
+    "title": "Creating a test post",
+    "timestamp": "2026-08-04",
+    "description": "Exploring how frontend frameworks work by creating a simplified one from scratch.",
+    "tags": [
+        "javascript",
+        "web-components",
+        "frontend"
+    ],
+    "category": "web-development",
+    "published": true
+}

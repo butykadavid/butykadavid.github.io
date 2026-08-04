@@ -1,6 +1,6 @@
 export class NavigationBar extends HTMLElement {
     async connectedCallback() {
-        const css = await fetch("./components/navigationBar/navigation-bar.css")
+        const css = await fetch("./components/navigation-bar/navigation-bar.css")
             .then(r => r.text());
 
         this.render(css);
