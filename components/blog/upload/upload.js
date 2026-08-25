@@ -1,5 +1,6 @@
-import { auth } from "../../UI/auth-status/auth.js";
 import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+import { backendBaseUrl } from "../../../../appsettings.js";
+
 
 export class UploadComponent extends HTMLElement {
 
@@ -276,7 +277,7 @@ export class UploadComponent extends HTMLElement {
         formData.append("cover", this.querySelector("#cover").files[0] ?? null)
         formData.append("content", this.querySelector("#markdown").value);
 
-        const res = await fetch("http://localhost:3000/blog/publish", {
+        const res = await fetch(`${backendBaseUrl}/blog/publish`, {
             method: "POST",
             credentials: "include",
             body: formData

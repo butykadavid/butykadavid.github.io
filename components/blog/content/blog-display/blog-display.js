@@ -1,6 +1,7 @@
 import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
 import "../../../UI/text-label/text-label.js"
 import { auth } from "../../../UI/auth-status/auth.js";
+import { backendBaseUrl } from "../../../../appsettings.js";
 
 export class BlogDisplay extends HTMLElement {
 
@@ -25,7 +26,7 @@ export class BlogDisplay extends HTMLElement {
         const deleteButton = this.querySelector("#delete_post")
         deleteButton.addEventListener("click", async () => {
             try {
-                const response = await fetch("http://localhost:3000/blog/delete", {
+                const response = await fetch(`${backendBaseUrl}/blog/delete`, {
                     method: "DELETE",
                     headers: {
                         "Content-Type": "application/json"

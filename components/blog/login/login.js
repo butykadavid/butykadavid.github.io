@@ -1,4 +1,5 @@
 import { auth } from "../../UI/auth-status/auth.js"
+import { backendBaseUrl } from "../../../../appsettings.js";
 
 export class LoginComponent extends HTMLElement {
 
@@ -19,7 +20,7 @@ export class LoginComponent extends HTMLElement {
         const password = this.querySelector("#password").value;
 
         try {
-            const response = await fetch("http://localhost:3000/auth/login", {
+            const response = await fetch(`${backendBaseUrl}/auth/login`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
