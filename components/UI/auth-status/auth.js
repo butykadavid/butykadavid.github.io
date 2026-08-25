@@ -1,3 +1,5 @@
+import { backendBaseUrl } from "../../../appsettings.js";
+
 export const auth = {
     authenticated: false,
     user: null,
@@ -5,7 +7,7 @@ export const auth = {
     async init() {
         try {
             const response = await fetch(
-                "http://localhost:3000/auth/status",
+                `${backendBaseUrl}/auth/status`,
                 {
                     credentials: "include"
                 }
@@ -26,7 +28,7 @@ export const auth = {
     },
 
     async logout() {
-        await fetch("http://localhost:3000/auth/logout", {
+        await fetch(`${backendBaseUrl}/auth/logout`, {
             method: "POST",
             credentials: "include"
         });
