@@ -1,0 +1,36 @@
+.navig {
+    height: 10dvh;
+    width: 100dvw;
+    padding: 0 10dvw;
+    background-color: var(--main-color-2);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__ad {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    color: var(--accent-color-1);
+
+    cursor: default;
+}
+
+.nav__ad span:first-child {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.nav__ad span:nth-child(2) {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 24px;
+}

@@ -1,0 +1,12 @@
+text-label span {
+    padding: 0 6px;
+    background: var(--main-color-2);
+    color: var(--accent-color-1);
+
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+text-label span:hover{
+    opacity: 0.7;
+}

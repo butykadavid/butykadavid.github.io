@@ -6,7 +6,7 @@ export class PortfolioFooter extends HTMLElement {
 
         const css = await fetch("./components/footer/footer.css")
             .then(r => r.text());
-        
+
         this.render(year, version, css);
     }
 
@@ -21,15 +21,15 @@ export class PortfolioFooter extends HTMLElement {
                             </div>
 
                             <div class="right">
-                                <a href="https://www.instagram.com/_btykdvd_" target="_blank">
-                                    <img src="/components/footer/instagram.png">
+                                <a href="/blog.html" title="Blog">
+                                    <img src="/components/footer/news.png">
                                 </a>
 
-                                <a href="https://www.facebook.com/david.butyka" target="_blank">
-                                    <img src="/components/footer/facebook.png">
+                                <a href="https://www.github.com/butykadavid" target="_blank" title="GitHub">
+                                    <img src="/components/footer/github.png">
                                 </a>
 
-                                <a href="https://www.linkedin.com/in/d%C3%A1vid-butyka-565a7a236" target="_blank">
+                                <a href="https://www.linkedin.com/in/d%C3%A1vid-butyka-565a7a236" target="_blank" title="LinkedIn">
                                     <img src="/components/footer/linkedin.png">
                                 </a>
                             </div>
@@ -38,15 +38,15 @@ export class PortfolioFooter extends HTMLElement {
 
                     <div class="sm">
                         <div class="footer">
-                            <a href="https://www.instagram.com/_btykdvd_" target="_blank">
-                                <img src="/components/footer/instagram.png">
+                            <a href="/blog.html" title="Blog">
+                                <img src="/components/footer/news.png">
                             </a>
 
-                            <a href="https://www.facebook.com/david.butyka" target="_blank">
-                                <img src="/components/footer/facebook.png">
+                            <a href="https://www.github.com/butykadavid" target="_blank" title="GitHub">
+                                <img src="/components/footer/github.png">
                             </a>
 
-                            <a href="https://www.linkedin.com/in/d%C3%A1vid-butyka-565a7a236" target="_blank">
+                            <a href="https://www.linkedin.com/in/d%C3%A1vid-butyka-565a7a236" target="_blank" title="LinkedIn">
                                 <img src="/components/footer/linkedin.png">
                             </a>
                         </div>

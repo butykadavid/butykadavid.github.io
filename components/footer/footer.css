@@ -38,13 +38,13 @@ portfolio-footer {
 
 .footer .right a {
     height: 1.5vw;
-    opacity: 0.5;
+    opacity: 0.65;
     transition: 0.35s;
     margin-right: 25px;
 }
 
 .footer .right a:hover {
-    opacity: 0.75;
+    opacity: 0.85;
 }
 
 .footer .right a:last-child {
@@ -68,6 +68,6 @@ portfolio-footer {
     .footer a img {
         height: 3dvh;
         margin: 0px 15px;
-        opacity: 0.75;
+        opacity: 0.85;
     }
 }
