@@ -11,9 +11,11 @@ export class BlogCard extends HTMLElement {
         const category = this.getAttribute("category");
         const tags = this.getAttribute("tags").split(";");
         const size = this.getAttribute("size");
+        const coverFileName = this.getAttribute("cover");
 
-        const coverSrc = `./data/blog/posts/${id}/cover.png`;
-        const date = new Date(timestamp*1000).toString().split("(")[0]
+        const coverSrc = coverFileName != "null" ? `./data/blog/posts/${id}/${coverFileName}` : null;
+        const date = new Date(timestamp * 1000).toString().split("(")[0]
+
 
         this.render(css, { title, description, date, category, tags, coverSrc, size });
 
@@ -33,12 +35,14 @@ export class BlogCard extends HTMLElement {
             </style>
 
             <article class="blog__article__card">
-                <img src="${post.coverSrc}" alt="${post.title}">
-                <div class="blog-card__content">
-                    <span class="tag">${post.category}</span>
-                    <h2>${post.title}</h2>
-                    <p>${post.description}</p>
-                    <time>${post.date}</time>
+                <div class="blog__article__container">
+                    ${post.coverSrc ? `<img src="${post.coverSrc}" alt="${post.title}">` : ``}
+                    <div class="blog-card__content">
+                        <span class="tag">${post.category}</span>
+                        <h2>${post.title}</h2>
+                        <p>${post.description}</p>
+                        <time>${post.date}</time>
+                    </div>
                 </div>
             </article>
         `;

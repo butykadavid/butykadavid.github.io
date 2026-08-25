@@ -1,3 +1,5 @@
+import { auth } from "../../UI/auth-status/auth.js"
+
 export class LoginComponent extends HTMLElement {
 
     async connectedCallback() {
@@ -17,7 +19,7 @@ export class LoginComponent extends HTMLElement {
         const password = this.querySelector("#password").value;
 
         try {
-            const response = await fetch("http://localhost:3000/login", {
+            const response = await fetch("http://localhost:3000/auth/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -35,11 +37,13 @@ export class LoginComponent extends HTMLElement {
                 throw new Error(data.error);
             }
 
-            this.dispatchEvent(new CustomEvent("login-success", {
+            auth.authenticated = true
+            auth.user = data.user
+
+            this.dispatchEvent(new CustomEvent("auth-changed", {
                 bubbles: true,
                 detail: data
             }));
-
         } catch (error) {
             const errorContainer = this.querySelector("#error-message");
             errorContainer.style.display = "flex";
@@ -52,7 +56,7 @@ export class LoginComponent extends HTMLElement {
             <style>${css}</style>
 
             <div class="login__container">
-                <h1>Welcome admin</h1>
+                <h1>Welcome, admin!</h1>
                 <form>
                     <input 
                         id="username"

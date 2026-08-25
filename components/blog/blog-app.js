@@ -1,73 +1,77 @@
 import "./login/login.js";
+import "./upload/upload.js";
 import "./navigation-bar-blog/navigation-bar-blog.js";
 
 import "./content/blog-index/blog-index.js";
 import "./content/blog-display/blog-display.js"
 
+import { auth } from '../UI/auth-status/auth.js'
+
 export class BlogApp extends HTMLElement {
+    children = null
 
-    async connectedCallback() {
+    connectedCallback() {
+        this.children = this.innerHTML;
+
+        this.updateView();
+
+        window.addEventListener("auth-changed", () => this.updateView());
+    }
+
+    updateView() {
+
         const params = new URLSearchParams(window.location.search);
-        const postId = params.get("postId")
+
         const forceLogin = params.get("login") === "true";
+        const forceUpload = params.get("upload") === "true";
+        const postId = params.get("postId");
 
-        const isAuthenticated = await this.checkAuth();
+        if (forceUpload && auth.authenticated){
+            this.showUpload();
+            return;
+        }
 
-        if (forceLogin && !isAuthenticated) {
+        if (forceLogin && !auth.authenticated) {
             this.showLogin();
             return;
         }
 
         if (postId) {
-            this.showPost(postId)
-            return
+            this.showPost(postId);
+            return;
         }
 
         this.showBlog();
     }
 
+    showUpload() {
+        this.innerHTML = `
+            ${this.children}
+            <navigation-bar-blog></navigation-bar-blog>
+            <div class="blog">
+                <upload-component></upload-component>
+            </div>
+        `;
 
-    async checkAuth() {
-        try {
-            const response = await fetch(
-                "http://localhost:3000/auth/status",
-                {
-                    credentials: "include"
-                }
-            );
-
-            if (!response.ok) {
-                throw new Error("Not authenticated");
-            }
-
-            const data = await response.json();
-
-            this.showBlog();
-            return true;
-        } catch {
-            return false;
-        }
+        this.querySelector("upload-component").addEventListener("auth-changed", () => this.checkAuth());
     }
-
 
     showLogin() {
         this.innerHTML = `
+            ${this.children}
             <navigation-bar-blog></navigation-bar-blog>
             <div class="blog">
                 <login-component></login-component>
             </div>
         `;
 
-        this.querySelector("login-component")
-            .addEventListener(
-                "login-success",
-                () => this.checkAuth()
-            );
+        this.querySelector("login-component").addEventListener("auth-changed", () => this.checkAuth());
     }
 
 
     showPost(postId) {
         this.innerHTML = `
+            ${this.children}
             <navigation-bar-blog></navigation-bar-blog>
             <div class="blog">
                 <blog-display postId="${postId}"></blog-display>
@@ -77,6 +81,7 @@ export class BlogApp extends HTMLElement {
 
     showBlog() {
         this.innerHTML = `
+            ${this.children}
             <navigation-bar-blog></navigation-bar-blog>
             <div class="blog">
                 <blog-index></blog-index>

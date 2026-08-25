@@ -15,7 +15,7 @@ export class NavigationBarBlog extends HTMLElement {
                 <span>DVDBTYK</span>
                 <span>Developer blog</span>
             </div>
-                <button class="nav__item" href="/">Back to home</button>
+                <a class="nav__item ghost__button" href="/">Back to home</a>
             </div>
         `;
     }

@@ -1,9 +1,10 @@
-:root{
+:root {
     --main-color-1: #f2efed;
     --main-color-2: #252525;
-    --accent-color-1: #fefefe; /* Basically serves as --text-color-1 too */
+    --accent-color-1: #fefefe;
+    /* Basically serves as --text-color-1 too */
     --accent-color-2: #656565;
-    --text-color-2: #d3d3d3; 
+    --text-color-2: #d3d3d3;
 }
 
 @font-face {
@@ -67,11 +68,12 @@ portfolio-app {
     overflow-x: hidden;
 }
 
-blog-app .blog{
-    width: 100vw;
-    min-height: 80dvh;
-    padding: 0 10vw;
-    padding-top: 10dvh;
+blog-app .blog {
+    width: 100dvw;
+    height: 90dvh;
+    padding: 10dvh 10vw;
+
+    overflow-y: auto;
 }
 
 .lg {
@@ -103,6 +105,23 @@ p {
     text-align: justify;
 }
 
+.ghost__button {
+    outline: none;
+    text-decoration: none;
+    border: none;
+    background: none;
+    color: var(--accent-color-1);
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Teko';
+
+    transition: 0.25s ease-in-out;
+}
+
+.ghost__button:hover {
+    opacity: 0.7;
+}
+
 @media (max-width: 1024px) {
     .lg {
         display: none;
@@ -116,6 +135,14 @@ p {
         font-size: 7dvh;
         line-height: 7dvh;
     }
+
+    blog-app .blog {
+        width: 100vw;
+        height: 90dvh;
+        padding: 10dvh 5dvw;
+
+        overflow-y: auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -127,5 +154,13 @@ p {
     p {
         font-size: 3dvh;
         line-height: 3dvh;
+    }
+
+    blog-app .blog {
+        width: 100vw;
+        height: 90dvh;
+        padding: 10dvh 5dvw;
+
+        overflow-y: auto;
     }
 }

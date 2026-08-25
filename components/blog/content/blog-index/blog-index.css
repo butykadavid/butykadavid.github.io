@@ -5,9 +5,25 @@
 }
 
 .categories__container {
+    width: fit-content;
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.categories__container div:first-child {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.categories__container div:first-child span{
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+.categories__container div:first-child span:hover {
+    opacity: 0.7;
 }
 
 .categories__container p {
@@ -18,10 +34,30 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    gap: 10px;
+}
+
+.blog-view {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    column-gap: 25px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: var(--accent-color-2);
 }
 
 .blog-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 1.5rem;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+}
+
+.blog-sidebar{
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-sidebar::before {
+    content: "Fun and Creative";
 }

@@ -1,0 +1,37 @@
+auth-status {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+
+    background: var(--main-color-2);
+    color: var(--accent-color-1);
+}
+
+auth-status div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    
+    padding: 5px 10px;
+}
+
+auth-status div span {
+    font-size: 14px;
+}
+
+.button__container {
+    padding-right:  5px;
+    padding-left:  0px;
+
+    gap: 10px;
+}
+
+.button__container .ghost__button {
+    padding: 0;
+}
+
+.button__container .ghost__button:nth-child(2) {
+    color: rgb(255, 170, 170);
+}

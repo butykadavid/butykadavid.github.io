@@ -2,18 +2,26 @@ blog-display {
     position: relative;
 }
 
-blog-display a {
+blog-display .post_action_container {
     position: absolute;
     top: 0;
     right: 0;
 
-    font-size: 48px;
-    line-height: 24px;
-    text-decoration: none;
-    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-blog-display a:hover {
+blog-display .post_action {
+    font-size: 24px;
+    line-height: 12px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+blog-display .post_action:hover {
     opacity: 0.7;
 }
 
@@ -25,4 +33,15 @@ blog-display span {
     padding: 0 6px;
     background: var(--main-color-2);
     color: var(--accent-color-1);
+}
+
+blog-display .image__section {
+    display: flex;
+    justify-content: center;
+}
+
+
+blog-display img {
+    margin-top: 25px;
+    max-height: 80dvh;
 }

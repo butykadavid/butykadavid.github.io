@@ -1,6 +1,6 @@
 let c = 0;
 
-const _t = document.querySelectorAll(".blog");
+const _t = document.querySelectorAll(".secret__li");
 
 _t.forEach((element) => {
     element.addEventListener("click", () => {

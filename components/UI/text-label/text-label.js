@@ -8,13 +8,18 @@ export class TextLabel extends HTMLElement {
         const fontSize = this.getAttribute("font-size")
 
         this.render(css, text, fontSize)
+
+        const span = document.querySelector(`.category_${text}`)
+        span.addEventListener("click", () => {
+            window.location.replace(`/blog.html?category=${text}`)
+        })
     }
 
     render(css, text, fontSize) {
         this.innerHTML = `
             <style>${css}</style>
 
-            <span ${fontSize && `style="font-size: ${fontSize}"`}>${text}</span>
+            <span class="category_${text}" ${fontSize && `style="font-size: ${fontSize}"`}>${text}</span>
         `;
     }
 }
