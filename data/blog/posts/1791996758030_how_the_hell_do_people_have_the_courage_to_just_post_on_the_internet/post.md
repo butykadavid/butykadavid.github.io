@@ -1,0 +1,5 @@
+I am (now just was ??), but a mere *observer* of the internet. (Apart from a few profile pictures and online accounts with no content directly referring to my real life personality.) Now just to clarify I do consider myself a *digital introvert*. An introvert in general to be more exact. However I do have a healthy amount of confidence and stance a grown ass individual should probably have.
+
+But holy hell I find the concept of showing a part of you (or a part you wanna show) publicly very frightening. Publicly is an important word here as I do not really see the difference betweeen posting my thougths online or holding a public presentation in person where the whole fucking world is present.
+
+In this **first** post of mine I will try to do some research to understand why it is so hard for me, but easy for others and whether it is actually that big of a deal in the end.
